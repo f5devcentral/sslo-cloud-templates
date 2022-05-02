@@ -5,7 +5,7 @@ The following will walk you through a simple set of examples using the provided 
 
 ------
 
-####Launch the development container environment
+### Launch the development container environment
 
 There are two methods for launching the Docker container: 
 
@@ -44,7 +44,7 @@ Inside the container (interactive command line or code-server terminal), cd to /
 
 ------
 
-####Clone the repository
+### Clone the repository
 From within the container environment, clone this repository inside the empty /code folder. If using the interactive command line:
 ```bash
 cd /code
@@ -60,7 +60,7 @@ cd <repo>
 
 ------
 
-####Bootstrap the SSLO AWS environment with Terraform
+### Bootstrap the SSLO AWS environment with Terraform
 
 - From a web browser client - subscribe to the following EC2 instances:
 
@@ -105,7 +105,7 @@ cd <repo>
 
 ------
 
-####Build the SSL Orchestrator environment with Ansible
+### Build the SSL Orchestrator environment with Ansible
 
 - Move into the ansible folder and install the F5 collection.
 
@@ -123,7 +123,7 @@ cd <repo>
 
 ------
 
-#### Testing
+### Testing
 Upon successful environment bootstrap with Terraform and SSL Orchestrator topology configuration with Ansible, you can test your deployment by attempting to access the exposed virtual server address. The output from the *terraform apply* command will contain the "sslo_vip" IP address:
 ```bash
 curl -k https://sslo-vip-address
@@ -146,7 +146,7 @@ tcpdump -lnni dmz1 -Xs0 not icmp
 
 ------
 
-#### Deleting the Deployment
+### Deleting the Deployment
 
 When you are ready to delete your deployment, first revoke the BIG-IP license file so that it can be re-used:
   ```bash
