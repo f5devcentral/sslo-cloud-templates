@@ -1,0 +1,29 @@
+---
+#
+# The f5_modules collection is not installed by default in this lab environment.
+# Before using this playbook, install the collection:
+#   ansible-galaxy collection install f5networks.f5_modules -f
+#
+
+- name: Delete SSLO Configuration
+  hosts: all
+  gather_facts: False
+
+  collections:
+    - f5networks.f5_bigip
+  connection: httpapi
+
+  vars:
+    ansible_host: "{{ansible_host}}"
+    ansible_httpapi_port: 443
+    ansible_user: "admin"
+    ansible_httpapi_password: "{{ansible_httpapi_password}}"
+    ansible_network_os: f5networks.f5_bigip.bigip
+    ansible_httpapi_use_ssl: yes
+    ansible_httpapi_validate_certs: no
+
+  tasks:
+    - name: Delete SSLO configurations
+      bigip_sslo_config_utility:
+        utility: delete-all
+        timeout: 60

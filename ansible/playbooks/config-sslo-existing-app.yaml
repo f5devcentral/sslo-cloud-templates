@@ -1,0 +1,122 @@
+---
+#
+# The f5_modules collection is not installed by default in this lab environment.
+# Before using this playbook, install the collection:
+#   ansible-galaxy collection install f5networks.f5_modules -f
+#
+
+## Existing Application use case :: step 1
+## This declaration creates an SSLO existing app configuration - consisting of services, service chain, and security policy.
+## The security policy will then get attached to a standard LTM reverse proxy VIP
+
+- name: Create SSLO Existing Application Configuration
+  hosts: all
+  gather_facts: False
+
+  collections:
+    - f5networks.f5_bigip
+  connection: httpapi
+
+  vars:
+    ansible_host: "{{ansible_host}}"
+    ansible_httpapi_port: 443
+    ansible_user: "admin"
+    ansible_httpapi_password: "{{ansible_httpapi_password}}"
+    ansible_network_os: f5networks.f5_bigip.bigip
+    ansible_httpapi_use_ssl: yes
+    ansible_httpapi_validate_certs: no
+
+    snort1_host: "{{snort1_host}}"
+    snort2_host: "{{snort2_host}}"
+
+    provider:
+      server: "{{ ansible_host }}"
+      user: "{{ ansible_user }}"
+      password: "{{ ansible_httpapi_password }}"
+      server_port: "{{ ansible_httpapi_port }}"
+      validate_certs: no
+
+  tasks:
+    
+    ############################
+    #### SSLO objects below ####
+    ############################
+
+    ## inline L3 service 1
+    - name: SSLO LAYER 3 (SNORT1)
+      bigip_sslo_service_layer3:
+        name: "SNORT1"
+        devices_to:
+          vlan: "/Common/dmz1"
+          self_ip: "10.0.3.7"
+          netmask: "255.255.255.128"
+        devices_from:
+          vlan: "/Common/dmz2"
+          self_ip: "10.0.3.245"
+          netmask: "255.255.255.128"
+        devices:
+        - ip: "{{ snort1_host }}"
+
+    ## inline L3 service 2
+    - name: SSLO LAYER 3 (SNORT2)
+      bigip_sslo_service_layer3:
+        name: "SNORT2"
+        devices_to:
+          vlan: "/Common/dmz3"
+          self_ip: "10.0.4.7"
+          netmask: "255.255.255.128"
+        devices_from:
+          vlan: "/Common/dmz4"
+          self_ip: "10.0.4.245"
+          netmask: "255.255.255.128"
+        devices:
+        - ip: "{{ snort2_host }}"
+    
+    ## service chain 1
+    - name: Create SSLO service chain
+      bigip_sslo_config_service_chain:
+        name: "service_chain_1"
+        services:
+        - service_name: "SNORT1"
+          type: "L3"
+          ip_family: "ipv4"
+
+    ## service chain 2
+    - name: Create SSLO service chain
+      bigip_sslo_config_service_chain:
+        name: "service_chain_2"
+        services:
+        - service_name: "SNORT1"
+          type: "L3"
+          ip_family: "ipv4"
+        - service_name: "SNORT2"
+          type: "L3"
+          ip_family: "ipv4"
+
+    ## security policy
+    - name: SSLO config policy
+      bigip_sslo_config_policy:
+        name: "sslopolicy"
+        policy_consumer: "inbound"
+        policy_rules:
+        - name: "internal_traffic"
+          policy_action: "reject"
+          ssl_forwardproxy_action: "intercept"
+          service_chain: "ssloSC_service_chain_1"
+          conditions:
+          - condition_type: "client_ip_geolocation"
+            geolocations:
+            - type: "countryCode"
+              value: "US"
+        - name: "all_ssl_traffic"
+          policy_action: "allow"
+          ssl_forwardproxy_action: "intercept"
+          service_chain: "ssloSC_service_chain_2"
+          conditions:
+          - condition_type: "server_port_match"
+            condition_option_ports:
+            - "443"
+
+
+    
+

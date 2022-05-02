@@ -1,0 +1,185 @@
+#!/bin/bash
+
+# Send output to log file and serial console
+mkdir -p  /var/log/cloud /config/cloud /var/config/rest/downloads
+LOG_FILE=/var/log/cloud/startup-script.log
+[[ ! -f $LOG_FILE ]] && touch $LOG_FILE || { echo "Run Only Once. Exiting"; exit; }
+npipe=/tmp/$$.tmp
+trap "rm -f $npipe" EXIT
+mknod $npipe p
+tee <$npipe -a $LOG_FILE /dev/ttyS0 &
+exec 1>&-
+exec 1>$npipe
+exec 2>&1
+echo "$(date +"%Y-%m-%dT%H:%M:%S.%3NZ") : Startup Script Start"
+
+# # create user
+#tmsh create auth user noof password f5Twister! shell tmsh partition-access replace-all-with { all-partitions { role admin } }
+
+# save config
+tmsh save sys config
+
+mkdir -p /config/cloud
+
+cat << 'EOF' > /config/cloud/runtime-init-conf.yaml
+---
+pre_onboard_enabled:
+  - name: provision_rest
+    type: inline
+    commands:
+      - /usr/bin/setdb provision.extramb 4096
+      - /usr/bin/setdb restjavad.useextramb true
+runtime_parameters:
+  - name: HOST_NAME
+    type: metadata
+    metadataProvider:
+      type: compute
+      environment: aws
+      field: hostname
+  - name: REGION
+    type: url
+    query: region
+    value: 'http://169.254.169.254/latest/dynamic/instance-identity/document'
+  - name: MGMT_IP
+    type: metadata
+    metadataProvider:
+      environment: aws
+      type: network
+      field: local-ipv4s
+      index: 0
+bigip_ready_enabled: []
+extension_packages:
+  install_operations:
+    - extensionType: do
+      extensionVersion: 1.29.0
+      extensionHash: c0bd44f0d63e6bc25a5066d74c20cb6c86d3faad2c4eaa0cd04a47eb30ca104f
+    - extensionType: as3
+      extensionVersion: 3.26.0
+      extensionHash: b33a96c84b77cff60249b7a53b6de29cc1e932d7d94de80cc77fb69e0b9a45a0
+    - extensionType: ts
+      extensionVersion: 1.18.0
+      extensionHash: de4c82cafe503e65b751fcacfb2f169912ad5ce1645e13c5135dca972299174a
+    - extensionType: fast
+      extensionVersion: 1.7.0
+      extensionHash: 9c617f5bb1bb0d08ec095ce568a6d5d2ef162e504cd183fe3540586200f9d950
+extension_services:
+  service_operations:
+    - extensionType: do
+      type: inline
+      value:
+        schemaVersion: 1.0.0
+        class: Device
+        label: >-
+          SSLO STANDALONE
+        async: true
+        Common:
+          class: Tenant
+          myLicense:
+            class: License
+            licenseType: regKey
+            regKey:  ${license_key}
+          My_DbVariables:
+            class: DbVariables
+            provision.extramb: 4096
+            ui.advisory.text: SSLO BIGIP STANDALONE
+          My_Dns:
+            class: DNS
+            nameServers:
+              - 169.254.169.253
+          My_Ntp:
+            class: NTP
+            servers:
+              - 169.254.169.253
+            timezone: UTC
+          My_Provisioning:
+            class: Provision
+            ltm: nominal
+            sslo: nominal
+            avr: nominal
+          internal:
+            class: VLAN
+            tag: 4093
+            mtu: 1500
+            interfaces:
+            - name: '1.2'
+              tagged: false
+          internal-self:
+            class: SelfIp
+            address: ${internal_selfip}
+            vlan: internal
+            allowService: default
+            trafficGroup: traffic-group-local-only
+          external:
+            class: VLAN
+            tag: 4094
+            mtu: 1500
+            interfaces:
+            - name: '1.1'
+              tagged: false
+          external-self:
+            class: SelfIp
+            address: ${external_selfip}
+            vlan: external
+            allowService: default
+            trafficGroup: traffic-group-local-only
+          dmz1:
+            class: VLAN
+            tag: 4091
+            mtu: 1500
+            interfaces:
+            - name: '1.3'
+              tagged: false
+          dmz2:
+            class: VLAN
+            tag: 4092
+            mtu: 1500
+            interfaces:
+            - name: '1.4'
+              tagged: false
+          dmz3:
+            class: VLAN
+            tag: 4050
+            mtu: 1500
+            interfaces:
+            - name: '1.5'
+              tagged: false
+          dmz4:
+            class: VLAN
+            tag: 4051
+            mtu: 1500
+            interfaces:
+            - name: '1.6'
+              tagged: false 
+          app-route:
+            class: Route
+            network: ${app_route_dest}
+            gw: ${app_route_gw}
+            mtu: 1500
+          My_System:
+            class: System
+            autoPhonehome: false
+            hostname: standalone.sslo.com
+          admin:
+            class: User
+            userType: regular
+            password: ${admin_password}
+            shell: bash
+EOF
+
+# # Download
+PACKAGE_URL='https://cdn.f5.com/product/cloudsolutions/f5-bigip-runtime-init/v1.4.1/dist/f5-bigip-runtime-init-1.4.1-1.gz.run'
+for i in {1..30}; do
+    curl -fv --retry 1 --connect-timeout 5 -L $PACKAGE_URL -o "/var/config/rest/downloads/f5-bigip-runtime-init.gz.run" && break || sleep 10
+done
+# Install
+bash /var/config/rest/downloads/f5-bigip-runtime-init.gz.run -- '--cloud aws'
+# Run
+export F5_BIGIP_RUNTIME_INIT_LOG_LEVEL=silly
+f5-bigip-runtime-init --config-file /config/cloud/runtime-init-conf.yaml
+
+# Activate the built-in SSL Orchestrator package - filename is dependent on BIG-IP version that you are deploying
+restcurl -X POST /shared/iapp/stage-package-install -d '{"packagePath":"/usr/share/packages/f5-iappslx-ssl-orchestrator/${sslo_pkg_name}"}'
+sleep 5
+restcurl -X POST /shared/iapp/package-management-tasks -d '{"operation":"INSTALL","packageFilePath":"/var/config/rest/downloads/${sslo_pkg_name}"}'
+
+echo "$(date +"%Y-%m-%dT%H:%M:%S.%3NZ") : Startup Script Finish"

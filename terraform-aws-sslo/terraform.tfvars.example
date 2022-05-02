@@ -1,0 +1,62 @@
+################################################################################
+###                            EXAMPLE TFVARS FILE                           ###
+################################################################################
+### Copy this file to 'terraform.tfvars' and modify as required              ###
+### The new terraform.tfvars file will be ignored in git commits.            ###
+################################################################################
+
+## Custom Variable Values
+
+# Prefix for object creation
+prefix = "sslo"
+
+# Name for AWS EC2 key
+ec2_key_name = "sslo-keypair"
+
+# BYOL License Key required for SSL Orchestrator
+# license_key = "AAAAA-BBBBB-CCCCC-DDDDD-EEEEEEE"
+
+# Source list for management security group
+# !!! Add your own source IP and bitmask here to restrict access!!!
+mgmt_src_addr_prefixes = ["0.0.0.0/0"]
+
+# AWS location
+region = "us-east-1"
+az     = "us-east-1a"
+
+# VPC subnets
+vpc_cidrs = {
+  vpc         = "10.0.0.0/16"
+  management  = "10.0.1.0/24"
+  external    = "10.0.2.0/24"
+  dmz1        = "10.0.3.0/25"
+  dmz2        = "10.0.3.128/25"
+  dmz3        = "10.0.4.0/25"
+  dmz4        = "10.0.4.128/25"
+  internal    = "10.0.5.0/24"
+  application = "192.168.1.0/24"
+}
+
+# BIG-IP Virtual Server IP Address for Inbound Layer 3 Topology demo
+app_vip = "10.0.2.200"
+
+# BIG-IP VM instance type
+instance_type = "m5.4xlarge"
+
+# AMI IDs (Region-specific)
+inspection_ami = "ami-0cdc9ccb73322825f" ### us-east-1 ### Snort pre-configured by Miri Infotech Inc. on Ubuntu
+webapp_ami     = "ami-05343502b4149e010" ### us-east-1 ### WordPress with NGINX and SSL Certified by Bitnami and Automattic
+
+# The default BIG-IP VE versions below were tested and confirmed to work.
+# To deploy a different version, lookup the ami for your aws region first. For example:
+# aws ec2 describe-images --region us-east-1 \
+#   --filters Name=name,Values=*BIGIP-15.1.5*2Boot* \
+#   | jq '.Images[] |.ImageId, .Name'
+sslo_ami       = "ami-06ceb79f3482bd83c" ### us-east-1 ### F5 BIG-IP VE - ALL (BYOL, 2 Boot Locations) ### 15.1.1 (SSLO 7.5)
+#sslo_ami       = "ami-xxxxxxxxxxxxxxxxx" ### us-east-1 ### F5 BIG-IP VE - ALL (BYOL, 2 Boot Locations) ### 16.1.0 (SSLO 9.0)
+
+sslo_pkg_name = "f5-iappslx-ssl-orchestrator-15.1.0-7.5.2.noarch.rpm" ### BIG-IP 15.1 (SSLO 7.5)
+#sslo_pkg_name = "f5-iappslx-ssl-orchestrator-16.1.0-9.0.24.noarch.rpm"   ### BIG-IP 16.1 (SSLO 9.0)
+
+# 'admin' user password for BIG-IP
+admin_password = "f5Twister!"

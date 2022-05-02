@@ -1,0 +1,98 @@
+---
+#
+# The f5_modules collection is not installed by default in this lab environment.
+# Before using this playbook, install the collection:
+#   ansible-galaxy collection install f5networks.f5_modules -f
+#
+
+## Existing Application use case :: step 2
+## This declaration creates a simple reverse proxy LTM application with client SSL and a pool, then attaches the SSLO security policy.
+
+- name: Create SSLO Existing Application Configuration
+  hosts: all
+  gather_facts: False
+
+  collections:
+    - f5networks.f5_bigip
+  connection: httpapi
+
+  vars:
+    ansible_host: "{{ansible_host}}"
+    ansible_httpapi_port: 443
+    ansible_user: "admin"
+    ansible_httpapi_password: "{{ansible_httpapi_password}}"
+    ansible_network_os: f5networks.f5_bigip.bigip
+    ansible_httpapi_use_ssl: yes
+    ansible_httpapi_validate_certs: no
+
+    snort1_host: "{{snort1_host}}"
+    snort2_host: "{{snort2_host}}"
+    webapp_pool: "{{webapp_pool}}"
+    vipname: "my-app-vip"
+    sslopolicy: "sslopolicy"
+
+    provider:
+      server: "{{ ansible_host }}"
+      user: "{{ ansible_user }}"
+      password: "{{ ansible_httpapi_password }}"
+      server_port: "{{ ansible_httpapi_port }}"
+      validate_certs: no
+
+  tasks:    
+    ## create webapp pool
+    - name: Create webapp pool
+      bigip_pool:
+        provider: "{{ provider }}"
+        name: webapp
+        monitors:
+        - https
+      delegate_to: localhost
+
+    ## add members to webapp pool
+    - name: Add member to webapp pool
+      bigip_pool_member:
+        provider: "{{ provider }}"
+        pool: webapp
+        host: "{{ webapp_pool }}"
+        port: 443
+      delegate_to: localhost
+
+    ## create client SSL profile
+    - name: Create client SSL profile
+      bigip_profile_client_ssl:
+        provider: "{{ provider }}"
+        name: "my-clientssl"
+        cert_key_chain:
+        - cert: "/Common/default.crt"
+          key: "/Common/default.key"
+      delegate_to: localhost
+    
+    ## create application VIP
+    - name: Create application VIP
+      bigip_virtual_server:
+        provider: "{{ provider }}"
+        name: "{{vipname}}"
+        destination: "10.0.2.200"
+        port: 443
+        pool: "/Common/webapp"
+        snat: "Automap"
+        profiles:
+        - http
+        - ssloDefault_accessProfile
+        - name: "my-clientssl"
+          context: "client-side"
+        - name: "serverssl"
+          context: "server-side"
+        enabled_vlans:
+        - "/Common/external"          
+      delegate_to: localhost
+
+    ## attach SSLO security policy
+    - name: Attach SSLO security policy
+      bigip_command:
+        commands:
+        - modify ltm virtual {{vipname}} per-flow-request-access-policy ssloP_{{sslopolicy}}.app/ssloP_{{sslopolicy}}_per_req_policy
+      delegate_to: localhost
+
+    
+
