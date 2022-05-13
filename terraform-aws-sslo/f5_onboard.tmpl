@@ -16,6 +16,11 @@ echo "$(date +"%Y-%m-%dT%H:%M:%S.%3NZ") : Startup Script Start"
 # # create user
 #tmsh create auth user noof password f5Twister! shell tmsh partition-access replace-all-with { all-partitions { role admin } }
 
+# Workaround for iAppsLX auth changes
+tmsh modify sys db httpd.matchclient value false
+bigstart restart httpd restnoded
+sleep 60
+
 # save config
 tmsh save sys config
 
@@ -27,8 +32,9 @@ pre_onboard_enabled:
   - name: provision_rest
     type: inline
     commands:
-      - /usr/bin/setdb provision.extramb 4096
+      - /usr/bin/setdb provision.extramb 2400
       - /usr/bin/setdb restjavad.useextramb true
+      - /usr/bin/setdb httpd.matchclient false
 runtime_parameters:
   - name: HOST_NAME
     type: metadata
@@ -80,7 +86,7 @@ extension_services:
             regKey:  ${license_key}
           My_DbVariables:
             class: DbVariables
-            provision.extramb: 4096
+            provision.extramb: 2400
             ui.advisory.text: SSLO BIGIP STANDALONE
           My_Dns:
             class: DNS

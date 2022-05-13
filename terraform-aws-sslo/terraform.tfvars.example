@@ -46,17 +46,21 @@ instance_type = "m5.4xlarge"
 # AMI IDs (Region-specific)
 inspection_ami = "ami-0cdc9ccb73322825f" ### us-east-1 ### Snort pre-configured by Miri Infotech Inc. on Ubuntu
 webapp_ami     = "ami-05343502b4149e010" ### us-east-1 ### WordPress with NGINX and SSL Certified by Bitnami and Automattic
+# sslo_ami      = "ami-xxxxxxxxxxxxxxxxx"  ### Use F5 BIG-IP VE - ALL (BYOL, 2 Boot Locations)
+# sslo_pkg_name = "f5-iappslx-ssl-orchestrator-x.x.x-x.x.x.noarch.rpm"  ### Corresponding package that is included in the above AMI
 
-# The default BIG-IP VE versions below were tested and confirmed to work.
+# 
+# Note: The BIG-IP VE versions below were tested and confirmed to work.
 # To deploy a different version, lookup the ami for your aws region first. For example:
 # aws ec2 describe-images --region us-east-1 \
 #   --filters Name=name,Values=*BIGIP-15.1.5*2Boot* \
 #   | jq '.Images[] |.ImageId, .Name'
-sslo_ami       = "ami-06ceb79f3482bd83c" ### us-east-1 ### F5 BIG-IP VE - ALL (BYOL, 2 Boot Locations) ### 15.1.1 (SSLO 7.5)
-#sslo_ami       = "ami-xxxxxxxxxxxxxxxxx" ### us-east-1 ### F5 BIG-IP VE - ALL (BYOL, 2 Boot Locations) ### 16.1.0 (SSLO 9.0)
+#
 
-sslo_pkg_name = "f5-iappslx-ssl-orchestrator-15.1.0-7.5.2.noarch.rpm" ### BIG-IP 15.1 (SSLO 7.5)
-#sslo_pkg_name = "f5-iappslx-ssl-orchestrator-16.1.0-9.0.24.noarch.rpm"   ### BIG-IP 16.1 (SSLO 9.0)
+#  BIG-IP 15.1.5.1 / SSLO 7.5.2 / us-east-1 
+sslo_ami      = "ami-08825101a0ab709f0"  ### Use F5 BIG-IP VE - ALL (BYOL, 2 Boot Locations)
+sslo_pkg_name = "f5-iappslx-ssl-orchestrator-15.1.0-7.5.2.noarch.rpm" 
+
 
 # 'admin' user password for BIG-IP
 admin_password = "f5Twister!"
