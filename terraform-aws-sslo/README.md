@@ -30,7 +30,6 @@ This template was developed and tested in the **AWS US-East-1** region with the 
   - https://aws.amazon.com/marketplace/pp?sku=5n807t93duw392y7t8v7nb1zv
   - https://aws.amazon.com/marketplace/pp?sku=758gbcgh7wafwchsq40cmj18j
   - https://aws.amazon.com/marketplace/pp?sku=9jk8duinsir94459457myhn4q
-  - https://aws.amazon.com/marketplace/pp?sku=9jk8duinsir94459457myhn4q
 
 - Obtain your programmatic access credentials for your AWS account: Access Key ID, Access Key, and Session Token.
 
