@@ -24,10 +24,10 @@ Please refer to official F5 documentation for additional guidance: https://cloud
   ```bash
   cd f5_sslo_api_tools
   ```
-- Change to the ansible folder and install the F5 Ansible module collection
+- Change to the ansible folder and install the F5 Ansible module collections (imperative and declarative collections)
   ```bash
   cd ansible
-  ansible-galaxy collection install f5networks.f5_modules -f
+  ansible-galaxy collection install f5networks.f5_modules f5networks.f5_bigip -f
   ```
 - Launch Terraform commands from within the **f5_sslo_api_tools/terraform-aws-sslo** folder.
 - Launch Ansible commands from within the **f5_sslo_api_tools/ansible** folder.
