@@ -1,0 +1,44 @@
+---
+#
+# The f5_modules collection is not installed by default in this lab environment.
+# Before using this playbook, install the collection:
+#   ansible-galaxy collection install f5networks.f5_bigip -f
+#
+
+## Existing Application use case :: step 2
+## This declaration creates a simple reverse proxy LTM application with client SSL and a pool, then attaches the SSLO security policy.
+
+- name: Create SSLO Existing Application Configuration
+  hosts: all
+  gather_facts: False
+
+  collections:
+    - f5networks.f5_bigip
+  connection: httpapi
+
+  vars:
+    ansible_host: "{{ansible_host}}"
+    ansible_httpapi_port: 443
+    ansible_user: "admin"
+    ansible_httpapi_password: "{{ansible_httpapi_password}}"
+    ansible_network_os: f5networks.f5_bigip.bigip
+    ansible_httpapi_use_ssl: yes
+    ansible_httpapi_validate_certs: no
+
+  tasks:    
+    ## import cert/key
+    - name: Import server cert/key
+      bigip_ssl_key_cert:
+        key_content: "{{ lookup('file', 'certs/wildcardrsa.f5labs.com.pemk') }}"
+        key_name: wildcard.f5labs.com
+        cert_content: "{{ lookup('file', 'certs/wildcardrsa.f5labs.com.crt') }}"
+        cert_name: wildcard.f5labs.com
+
+    ## webapp application
+    - name: Create webapp application (via as3)
+      bigip_as3_deploy:
+        content: "{{ lookup('template', 'declarations/as3_app_webapp.json') }}"
+      tags: [ deploy ]
+
+    
+

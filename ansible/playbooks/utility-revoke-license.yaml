@@ -2,7 +2,7 @@
 #
 # The f5_modules collection is not installed by default in this lab environment.
 # Before using this playbook, install the collection:
-#   ansible-galaxy collection install f5networks.f5_modules -f
+#   ansible-galaxy collection install f5networks.f5_bigip -f
 #
 
 - name: Delete BIG-IP license
@@ -18,6 +18,7 @@
     bigip_mgmt_port: 443
     bigip_username: "admin"
     bigip_password: "{{ansible_httpapi_password}}"
+    ansible_network_os: f5networks.f5_bigip.bigip
     ansible_httpapi_use_ssl: yes
     ansible_httpapi_validate_certs: no
 

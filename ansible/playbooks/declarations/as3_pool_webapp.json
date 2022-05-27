@@ -1,0 +1,27 @@
+{
+    "class": "AS3",
+    "action": "deploy",
+    "persist": true,
+    "declaration": {
+        "class": "ADC",
+        "schemaVersion": "3.22.0",
+        "Common": {
+            "class": "Tenant",
+            "Shared": {
+                "class": "Application",
+                "template": "shared",
+                "webapp": {
+                    "class": "Pool",
+                    "members": [
+                        {
+                            "servicePort": 443,
+                            "shareNodes": true,
+                            "serverAddresses": ["{{ webapp_pool }}"]
+                        }
+                    ],
+                    "monitors": [{"bigip": "/Common/https"}]
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
 #
 # The f5_modules collection is not installed by default in this lab environment.
 # Before using this playbook, install the collection:
-#   ansible-galaxy collection install f5networks.f5_modules -f
+#   ansible-galaxy collection install f5networks.f5_bigip -f
 #
 
 ## Existing Application use case :: step 1
@@ -29,20 +29,12 @@
     snort1_host: "{{snort1_host}}"
     snort2_host: "{{snort2_host}}"
 
-    provider:
-      server: "{{ ansible_host }}"
-      user: "{{ ansible_user }}"
-      password: "{{ ansible_httpapi_password }}"
-      server_port: "{{ ansible_httpapi_port }}"
-      validate_certs: no
-
   tasks:
-    
     ############################
     #### SSLO objects below ####
     ############################
 
-    ## inline L3 service 1
+    ## Inline L3 service 1
     - name: SSLO LAYER 3 (SNORT1)
       bigip_sslo_service_layer3:
         name: "SNORT1"
@@ -57,7 +49,7 @@
         devices:
         - ip: "{{ snort1_host }}"
 
-    ## inline L3 service 2
+    ## Inline L3 service 2
     - name: SSLO LAYER 3 (SNORT2)
       bigip_sslo_service_layer3:
         name: "SNORT2"
@@ -72,7 +64,7 @@
         devices:
         - ip: "{{ snort2_host }}"
     
-    ## service chain 1
+    ## Service chain 1
     - name: Create SSLO service chain
       bigip_sslo_config_service_chain:
         name: "service_chain_1"
@@ -81,7 +73,7 @@
           type: "L3"
           ip_family: "ipv4"
 
-    ## service chain 2
+    ## Service chain 2
     - name: Create SSLO service chain
       bigip_sslo_config_service_chain:
         name: "service_chain_2"
@@ -93,30 +85,23 @@
           type: "L3"
           ip_family: "ipv4"
 
-    ## security policy
+    ## Security Policy
     - name: SSLO config policy
       bigip_sslo_config_policy:
         name: "sslopolicy"
         policy_consumer: "inbound"
+        default_rule:
+          allow_block: "allow"
+          tls_intercept: "intercept"
+          service_chain: "service_chain_2"
         policy_rules:
         - name: "internal_traffic"
-          policy_action: "reject"
-          ssl_forwardproxy_action: "intercept"
-          service_chain: "ssloSC_service_chain_1"
-          conditions:
-          - condition_type: "client_ip_geolocation"
-            geolocations:
-            - type: "countryCode"
-              value: "US"
-        - name: "all_ssl_traffic"
           policy_action: "allow"
-          ssl_forwardproxy_action: "intercept"
-          service_chain: "ssloSC_service_chain_2"
+          ssl_action: "intercept"
+          service_chain: "service_chain_1"
           conditions:
-          - condition_type: "server_port_match"
-            condition_option_ports:
-            - "443"
-
-
+          - condition_type: "client_ip_subnet_match"
+            condition_option_subnet:
+            - "10.0.0.0/8"
     
 

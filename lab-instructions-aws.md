@@ -109,9 +109,11 @@ cd <repo>
 - Move into the ansible folder and install the F5 collection.
 
   ```bash
-  cd ../ansible
-  ansible-galaxy collection install f5networks.f5_bigip -f
+  cd ansible
+  ansible-galaxy collection install f5networks.f5_modules f5networks.f5_bigip -f
   ```
+
+  > :warning: Please note that as of May 2022 the SSL Orchestrator Ansible collection is currently under public preview and subject to evolve over time.
 
 - Deploy an Ansible config using the variables file that was created by the accompanying Terraform. This will create an inbound layer 3 SSL Orchestrator topology. From the 'ansible' folder:
 

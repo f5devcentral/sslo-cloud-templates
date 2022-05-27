@@ -17,6 +17,7 @@ The following software package versions are required for F5 Ansible automation:
 
 Please refer to official F5 documentation for additional guidance: https://clouddocs.f5.com/products/orchestration/ansible/devel/
 
+> :warning: Please note that as of May 2022 the SSL Orchestrator Ansible collection is currently under public preview and subject to evolve over time.
 
 ##### Installation
 - Start in an empty local folder and git clone this repository
