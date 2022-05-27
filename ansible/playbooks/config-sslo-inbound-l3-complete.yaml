@@ -144,13 +144,11 @@
       bigip_sslo_config_topology:
         name: "{{topology_name}}"
         topology_type: "inbound_l3"
-        dest: "172.16.1.200/32"
+        dest: "10.0.2.200/32"
         port: 443
         ssl_settings: "sslconfig"
         security_policy: "ssloP_sslopolicy"
         vlans:
-        - "/Common/lab-local"
+        - "/Common/external"
         snat: "automap"
         pool: "/Common/webapp"
-
-
