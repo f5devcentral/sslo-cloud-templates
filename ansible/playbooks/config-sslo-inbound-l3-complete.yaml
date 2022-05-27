@@ -1,8 +1,8 @@
 ---
 #
-# The f5_modules collection is not installed by default in this lab environment.
-# Before using this playbook, install the collection:
-#   ansible-galaxy collection install f5networks.f5_modules -f
+# The f5_modules and f5_bigip collections are required by this playbook.
+# If not already installed:
+#   ansible-galaxy collection install f5networks.f5_modules f5networks.f5_bigip -f
 #
 
 - name: Create SSLO Topology Configuration
@@ -117,19 +117,23 @@
       bigip_sslo_config_policy:
         name: "sslopolicy"
         policy_consumer: "inbound"
+        default_rule:
+          allow_block: "allow"
+          tls_intercept: "intercept"
+          service_chain: "service_chain_1"
         policy_rules:
         - name: "internal_traffic"
           policy_action: "allow"
-          ssl_forwardproxy_action: "intercept"
-          service_chain: "ssloSC_service_chain_1"
+          ssl_action: "intercept"
+          service_chain: "service_chain_1"
           conditions:
           - condition_type: "client_ip_subnet_match"
             condition_option_subnet:
             - "10.0.0.0/8"
         - name: "all_ssl_traffic"
           policy_action: "allow"
-          ssl_forwardproxy_action: "intercept"
-          service_chain: "ssloSC_service_chain_2"
+          ssl_action: "intercept"
+          service_chain: "service_chain_2"
           conditions:
           - condition_type: "server_port_match"
             condition_option_ports:
@@ -140,22 +144,13 @@
       bigip_sslo_config_topology:
         name: "{{topology_name}}"
         topology_type: "inbound_l3"
-        dest: "10.0.2.200/32"
+        dest: "172.16.1.200/32"
         port: 443
         ssl_settings: "sslconfig"
         security_policy: "ssloP_sslopolicy"
         vlans:
-        - "/Common/external"
+        - "/Common/lab-local"
         snat: "automap"
         pool: "/Common/webapp"
 
-    ## Workaround :: manually add pool to topology VIP
-    - name: Add pool to topology VIP
-      bigip_virtual_server:
-        provider: "{{ provider }}"
-        name: "sslo_{{topology_name}}.app/sslo_{{topology_name}}"
-        pool: "/Common/webapp"
-        address_translation: "yes"
-        port_translation: "yes"
-      delegate_to: localhost
 
