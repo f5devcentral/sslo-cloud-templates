@@ -1,0 +1,314 @@
+plugins:
+  become: {}
+  cache: {}
+  callback: {}
+  cliconf: {}
+  connection: {}
+  httpapi:
+    bigip:
+      description: HttpApi Plugin for BIG-IP devices
+      name: bigip
+      version_added: '1.0'
+    bigiq:
+      description: HttpApi Plugin for BIG-IQ devices
+      name: bigiq
+      version_added: '1.0'
+    velos:
+      description: HttpApi Plugin for VELOS devices
+      name: velos
+      version_added: 1.1.0
+  inventory: {}
+  lookup: {}
+  module:
+    bigip_apm_policy_fetch:
+      description: Exports the APM policy or APM access profile from remote nodes
+      name: bigip_apm_policy_fetch
+      namespace: ''
+      version_added: 1.0.0
+    bigip_apm_policy_import:
+      description: Manage BIG-IP APM policy or APM access profile imports
+      name: bigip_apm_policy_import
+      namespace: ''
+      version_added: 1.0.0
+    bigip_as3_deploy:
+      description: Manages AS3 declarations sent to BIG-IP
+      name: bigip_as3_deploy
+      namespace: ''
+      version_added: 1.0.0
+    bigip_asm_policy_fetch:
+      description: Exports the ASM policy from remote nodes.
+      name: bigip_asm_policy_fetch
+      namespace: ''
+      version_added: 1.0.0
+    bigip_asm_policy_import:
+      description: Manage BIG-IP ASM policy imports
+      name: bigip_asm_policy_import
+      namespace: ''
+      version_added: 1.0.0
+    bigip_cfe_deploy:
+      description: Manages CFE declarations sent to BIG-IP
+      name: bigip_cfe_deploy
+      namespace: ''
+      version_added: 1.0.0
+    bigip_command:
+      description: Run TMSH and BASH commands on F5 devices
+      name: bigip_command
+      namespace: ''
+      version_added: 1.0.0
+    bigip_config:
+      description: Manage BIG-IP configuration sections
+      name: bigip_config
+      namespace: ''
+      version_added: 1.0.0
+    bigip_configsync_action:
+      description: Perform different actions related to config-sync
+      name: bigip_configsync_action
+      namespace: ''
+      version_added: 1.0.0
+    bigip_device_info:
+      description: Collect information from F5 BIG-IP devices
+      name: bigip_device_info
+      namespace: ''
+      version_added: 1.0.0
+    bigip_do_deploy:
+      description: Manages DO declarations sent to BIG-IP
+      name: bigip_do_deploy
+      namespace: ''
+      version_added: 1.0.0
+    bigip_fast_application:
+      description: Manages FAST application declarations sent to BIG-IP
+      name: bigip_fast_application
+      namespace: ''
+      version_added: 1.0.0
+    bigip_fast_template:
+      description: Manages FAST template sets on BIG-IP
+      name: bigip_fast_template
+      namespace: ''
+      version_added: 1.0.0
+    bigip_imish_config:
+      description: Manage BIG-IP advanced routing configuration sections
+      name: bigip_imish_config
+      namespace: ''
+      version_added: 1.0.0
+    bigip_lx_package:
+      description: Manages Javascript LX packages on a BIG-IP
+      name: bigip_lx_package
+      namespace: ''
+      version_added: 1.0.0
+    bigip_qkview:
+      description: Manage QKviews on the device
+      name: bigip_qkview
+      namespace: ''
+      version_added: 1.0.0
+    bigip_software_image:
+      description: Manage software images on a BIG-IP
+      name: bigip_software_image
+      namespace: ''
+      version_added: 1.1.0
+    bigip_software_install:
+      description: Install software images on a BIG-IP
+      name: bigip_software_install
+      namespace: ''
+      version_added: 1.1.0
+    bigip_ssl_csr:
+      description: Create SSL CSR files on the BIG-IP
+      name: bigip_ssl_csr
+      namespace: ''
+      version_added: 1.0.0
+    bigip_ssl_key_cert:
+      description: Import/Delete SSL keys and certs from BIG-IP
+      name: bigip_ssl_key_cert
+      namespace: ''
+      version_added: 1.0.0
+    bigip_ssl_pkcs12:
+      description: Manage BIG-IP PKCS12 certificates/keys
+      name: bigip_ssl_pkcs12
+      namespace: ''
+      version_added: 1.0.0
+    bigip_sslo_config_authentication:
+      description: Manage an SSL Orchestrator authentication object
+      name: bigip_sslo_config_authentication
+      namespace: ''
+      version_added: 1.6.0
+    bigip_sslo_config_policy:
+      description: Manage an SSL Orchestrator security policy
+      name: bigip_sslo_config_policy
+      namespace: ''
+      version_added: 1.7.0
+    bigip_sslo_config_resolver:
+      description: Manage the SSL Orchestrator DNS resolver config
+      name: bigip_sslo_config_resolver
+      namespace: ''
+      version_added: 1.6.0
+    bigip_sslo_config_service_chain:
+      description: Manage an SSL Orchestrator service chain
+      name: bigip_sslo_config_service_chain
+      namespace: ''
+      version_added: 1.6.0
+    bigip_sslo_config_ssl:
+      description: Manage an SSL Orchestrator SSL configuration
+      name: bigip_sslo_config_ssl
+      namespace: ''
+      version_added: 1.6.0
+    bigip_sslo_config_topology:
+      description: Manage an SSL Orchestrator Topology
+      name: bigip_sslo_config_topology
+      namespace: ''
+      version_added: 1.7.0
+    bigip_sslo_config_utility:
+      description: Manage the set of SSL Orchestrator utility functions
+      name: bigip_sslo_config_utility
+      namespace: ''
+      version_added: 1.6.0
+    bigip_sslo_service_http:
+      description: Manage an SSL Orchestrator HTTP security device
+      name: bigip_sslo_service_http
+      namespace: ''
+      version_added: 1.6.0
+    bigip_sslo_service_icap:
+      description: Manage an SSL Orchestrator ICAP security device
+      name: bigip_sslo_service_icap
+      namespace: ''
+      version_added: 1.6.0
+    bigip_sslo_service_layer2:
+      description: Manage an SSL Orchestrator Layer 2 security device
+      name: bigip_sslo_service_layer2
+      namespace: ''
+      version_added: 1.6.0
+    bigip_sslo_service_layer3:
+      description: Manage an SSL Orchestrator Layer 3 security device
+      name: bigip_sslo_service_layer3
+      namespace: ''
+      version_added: 1.6.0
+    bigip_sslo_service_swg:
+      description: Manage an SSL Orchestrator SWG service
+      name: bigip_sslo_service_swg
+      namespace: ''
+      version_added: 1.0.0
+    bigip_sslo_service_tap:
+      description: Manage an SSL Orchestrator TAP security device
+      name: bigip_sslo_service_tap
+      namespace: ''
+      version_added: 1.6.0
+    bigip_ts_deploy:
+      description: Manages TS declarations sent to BIG-IP
+      name: bigip_ts_deploy
+      namespace: ''
+      version_added: 1.0.0
+    bigip_ucs:
+      description: Manage upload, installation, and removal of UCS files
+      name: bigip_ucs
+      namespace: ''
+      version_added: 1.0.0
+    bigip_ucs_fetch:
+      description: Fetches a UCS file from remote nodes
+      name: bigip_ucs_fetch
+      namespace: ''
+      version_added: 1.0.0
+    bigip_vcmp_guest:
+      description: Manages vCMP guests on a BIG-IP
+      name: bigip_vcmp_guest
+      namespace: ''
+      version_added: 1.1.0
+    bigiq_as3_deploy:
+      description: Manages AS3 declarations sent to BIG-IQ
+      name: bigiq_as3_deploy
+      namespace: ''
+      version_added: 1.0.0
+    bigiq_device_discovery:
+      description: Manage BIG-IP devices through BIG-IQ
+      name: bigiq_device_discovery
+      namespace: ''
+      version_added: 1.0.0
+    bigiq_device_info:
+      description: Collect information from F5 BIG-IQ devices
+      name: bigiq_device_info
+      namespace: ''
+      version_added: 1.0.0
+    bigiq_do_deploy:
+      description: Manages DO declarations sent to BIG-IQ
+      name: bigiq_do_deploy
+      namespace: ''
+      version_added: 1.0.0
+    bigiq_regkey_license:
+      description: Manages licenses in a BIG-IQ registration key pool
+      name: bigiq_regkey_license
+      namespace: ''
+      version_added: 1.0.0
+    bigiq_regkey_license_assignment:
+      description: Manage regkey license assignment on BIG-IPs from a BIG-IQ
+      name: bigiq_regkey_license_assignment
+      namespace: ''
+      version_added: 1.0.0
+    bigiq_regkey_pool:
+      description: Manages registration key pools on BIG-IQ
+      name: bigiq_regkey_pool
+      namespace: ''
+      version_added: 1.0.0
+    bigiq_utility_license:
+      description: Manage utility licenses on a BIG-IQ
+      name: bigiq_utility_license
+      namespace: ''
+      version_added: 1.0.0
+    bigiq_utility_license_assignment:
+      description: Manage utility license assignment on BIG-IPs from a BIG-IQ
+      name: bigiq_utility_license_assignment
+      namespace: ''
+      version_added: 1.0.0
+    velos_partition:
+      description: Manage VELOS chassis partitions
+      name: velos_partition
+      namespace: ''
+      version_added: 1.3.0
+    velos_partition_change_password:
+      description: Provides access to VELOS chassis partition user authentication
+        methods
+      name: velos_partition_change_password
+      namespace: ''
+      version_added: 1.3.0
+    velos_partition_image:
+      description: Manage VELOS chassis partition images
+      name: velos_partition_image
+      namespace: ''
+      version_added: 1.1.0
+    velos_partition_interface:
+      description: Manage network interfaces on VELOS chassis partitions
+      name: velos_partition_interface
+      namespace: ''
+      version_added: 1.4.0
+    velos_partition_lag:
+      description: Manage network interfaces on the VELOS chassis partitions
+      name: velos_partition_lag
+      namespace: ''
+      version_added: 1.4.0
+    velos_partition_vlan:
+      description: Manage VLANs on VELOS chassis partitions
+      name: velos_partition_vlan
+      namespace: ''
+      version_added: 1.3.0
+    velos_partition_wait:
+      description: Wait for a VELOS chassis partition to match a condition before
+        continuing
+      name: velos_partition_wait
+      namespace: ''
+      version_added: 1.3.0
+    velos_tenant:
+      description: Manage VELOS tenants
+      name: velos_tenant
+      namespace: ''
+      version_added: 1.1.0
+    velos_tenant_image:
+      description: Manage VELOS tenant images
+      name: velos_tenant_image
+      namespace: ''
+      version_added: 1.1.0
+    velos_tenant_wait:
+      description: Wait for a VELOS condition before continuing
+      name: velos_tenant_wait
+      namespace: ''
+      version_added: 1.1.0
+  netconf: {}
+  shell: {}
+  strategy: {}
+  vars: {}
+version: 1.8.0

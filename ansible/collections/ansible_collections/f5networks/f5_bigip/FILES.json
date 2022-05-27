@@ -1,0 +1,3148 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/httpapi",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/httpapi/bigip.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b017432cd85746e9ebd96d51ed3e1e57eadeab7eeef7a8c220576d96e82f3bfc",
+   "format": 1
+  },
+  {
+   "name": "plugins/httpapi/bigiq.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4bb57a87d9d707281f01d5527c3001095bb989f6a2242ebdf8994f57558f317e",
+   "format": 1
+  },
+  {
+   "name": "plugins/httpapi/velos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5c3a6b3a5dc048f54e1ca70d8263acebe8bfbcb6605b163d3bd73569e915763b",
+   "format": 1
+  },
+  {
+   "name": "plugins/httpapi/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigiq_device_discovery.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "225b638de2aca92b93445f52e4e205ba91335172d41706bd7df63f58159135b6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_service_layer2.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2d2511897063f56c1331d7ddbaebd72c210fef42966352974cf178aada5df417",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_partition_change_password.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f2851daf2cf5cd949c39387593419d45179d005f1fd1904285d386b4c0e1830",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_software_install.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b9501301927b6639c8ed395349f7312bfa67543afdeef3778784ba9cd965b165",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "54efa0f602e44f51954d0778b5da2ec7e8b0c2381ad693289400346f45d8f56b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_ts_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aab8ea97cab3fda3babe0981c384fe060175fea251a41b67e22de09f3f537864",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigiq_regkey_pool.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bda98102337e2c34fe2e5f27d74f9aa82ec511ac8516abc0c11061d3a61f9397",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_config_service_chain.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73de2a9f1adf053f8de5f20bca909c10c1446c5527561ab84f25d456d95f8139",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_service_swg.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d8d7481eabf9566d05e903fcebc640d42bca8ef329f5cee53e5a61c72e86bd5f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_tenant_wait.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57c27b068975ff841e1f3595651bcf9d1c5d7eeaa707bfc12e8d4c60a273179e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_ucs_fetch.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c8be0be735cd6f971cfe2e2da9fc808beadec2af87a6be8e4649d6c31e39ec4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigiq_as3_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1d5a3ce931c6d851f8033163b3c253c7c61c36daa71fa51921d5873adf5e9089",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_apm_policy_import.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "82e3b65c88c88a38b128e22104c38b178095728f143becd272a188589185f712",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_asm_policy_fetch.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8fc2aa2e58159d57137536a6644dbd93be8d049c5c30503203cc168529109aa6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_fast_template.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7063c52456464fe3289ffea62e9e3c7ae5377e17d5066e6bf35a174ea128f49d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_as3_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6133b9b6ae0bc994e958849b184ed33f6977a40f2960623034d29be9ff9e320e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_config_ssl.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e24c28a9a6cc62e46d378cec99a01817a4787fc98f0703954f5be6237348726",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_command.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9c7e07ebab396cc38d05ea8be6943e141e06cd9cc401ee2d726c793218ed829c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_partition_lag.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d5d078cf32fcd83d34654971fd9e467d31e084483a8e51068431d1bd6972c78d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_cfe_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2937110022d16f49e5cbbb314eb7812dd5f810440b19efbd6c633c61edbf84db",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_device_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5c45716ea437984b5580d5ca0554ca096ad358a5cbc4b0604230f19e4d849583",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigiq_utility_license_assignment.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "566e23a6e42512a91a35e6f41b5169ec88c77579319e605f6002f6aa2b4cf308",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_partition_vlan.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c987371fd72f6fec3ae23b01f9ee1300f84c8e68404a7c06155f73e83689cfd2",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigiq_do_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24f6bfcfde0f4b41235cd536bb69ef16fb4ca2e843fcf572b8f909eabfaaca4d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_asm_policy_import.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00ca517cd07f70c75214d7b53fcf04996b7d7d6a74955110c0c7e3ea62203f30",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_partition.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "919518038cc082807d0da316b23ef30c0490e4afe8cd2ee53259c334ee6988d2",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_tenant_image.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "48704a450fd1cdf26edcc58ffabc4b4999e26f06294f444a4e66a15cca7e8c6e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_service_tap.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "83911ef598cb7e7ca6b6def0ff52a7d3c8ba44431a3ee911567905d77efb6e96",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_qkview.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b4aa395ac21865808ff926b803f2407e65e13aa27f3253f70beb71caeec4fbfc",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_ssl_csr.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5270fd090381046d967afc974cd06a9fe371de93c6cd2e8cc500c3d27484a520",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_config_authentication.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35ae9a83902a5d84109534c2b771b6805bd322e24f3798b325ee31dd651553f7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_partition_interface.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b4045d504804f5358dba859d0b244acd4946e8369221d9e395d78b83b03f68f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_service_icap.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e40aa15c7f18f4b911ca41f300dff754e5be093b8960f9440566bc81e6c1479",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_config_topology.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b31c95f97e224ae974cda0bdb54801c25c4d684fb97c797187d4e0cb86b74fe0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_service_layer3.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d703917f4da1c48130a177e1df1f11a2702bfb1b03af277f0c0f40b0885e805",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_ucs.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f6b1110d8b08ca532509432ea7d0636abe65b571bc6ece6e1158b1c34a67d506",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_ssl_key_cert.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80cdd1b60780299193c3f478529a9d87217d0732104ece1679d486c361eaca20",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_config_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b9f83011a1e353ba02a57675a67feba77c577ecd55f3510d1f22b08992777d98",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_service_http.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7d32a5ebae02fe1339073b94a67101106fe750f8abd3ddb31eecd2a8c7e37879",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_do_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3eccaea8e017ea961dc2393ea2ff4eb77f9b022e54ab89741094cfbe145bf899",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigiq_regkey_license_assignment.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ea7014b03dd2e8222ffdb15627584d84d946f6455d3688c1d0448327261602f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_vcmp_guest.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8a567ea6cabb75ae275b7a7679f99e3c5901dbcc3cdf9506f10015ab95b5811f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigiq_regkey_license.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b88932e83cb20c5c7e109f3f77c3ea04e1442bdaed9522dad54b36e907a89149",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigiq_device_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a557efc16c36ee478d44617787ec6fe1885e910945df3a7c0067ee04a33a14e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_config_resolver.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6a4da792ece5e47355cfe28560f18237975a6536fb98bc8384ad684ab1e074d1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigiq_utility_license.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "331a42b74ab109552ed7f5dcbdbf923d6747711b5ba4e5de5032886893704dd0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_apm_policy_fetch.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "98af3409420c4057e2631163829ce9ca89600681271dc844bd047afa8c9a00eb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_lx_package.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "afe7dc4a0ce4cc3f8c28f42e75681890a65673256305e5660cabd1a47fb2e705",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_configsync_action.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f076965150e37b3c76cf7a81fb1c203665748b6de66d61ed05ab1bcfce8ecba0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_imish_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cc41f33c56a071e719549e3c036f899df7ff0ecfb6dbc596e95ed6b16cf13ce8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_sslo_config_utility.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d101a36d58c924695fb276009818fb688cd3b54e546c87b36222de22cf4ad413",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_partition_image.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "11b1e047b5138d4ab578d444d1cf09a72f540fdfe3dc58bd8e8ea68ec13cfdb6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_software_image.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "89455268323f8f85f15819684046ed51cb3dd438b2d2fa196730dd98254b510e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_partition_wait.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f65c44153a3c2e150e8de84bd2f0c439a42731bb97818d37d29311504b9a084c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_fast_application.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ec6c1733fd8adf755816c37ce5b8c24a864a7ea6ed21284f6f78187cb5ccd71",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bigip_ssl_pkcs12.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "257db22d4e01be8f7d42f871fa0e35d35072f804975b8d4bc25bf34d5c09769d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/velos_tenant.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "451cb18ff8151a28b2f8d80018136b9d6965d500df242aa2c0a1b56fe3b8cb16",
+   "format": 1
+  },
+  {
+   "name": "plugins/terminal",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/terminal/bigip.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e67dc0a200edb18a32aa41b460afe38313c1def29b5be439e3b01468f12c4c54",
+   "format": 1
+  },
+  {
+   "name": "plugins/terminal/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/action",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/bigip.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b09d0b7bad445162e203f5869659378d545087f38bffe50d7ed1d9fed5b970cc",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/bigiq.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a5be2ee7cc61e25d5037cfa37815be2ec77024fa0e361d0027fc71c4160db09e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/bigip_imish_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "65298c3378d8541207b4735259f70d5c29bd6f686905f142acfacd4185389655",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/common.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f4b8f17a928532aa95bce943944aee256d28a35f8b0185999f0646be2fbf77a9",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/urls.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f436f363ea23d8fb624544adc4771e2c53a0cd595f68b19fdb924f02400a6cb8",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/version.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b006b407165c9322ac15778e8cd7784cdc426c1281433b8139adfe776c4522d",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/compare.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9c1417497d61793bc6bf99dd522d2720f60c2dc56274e51c470fe28518a0e064",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/constants.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d6b3f4685af4b640b93e06af9999f65bbb8df75acf6eca1382e2510141556e5",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_resolver.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3ab872d3701036bb1dda6f9850f1e7880be55a28df45db5a9421c71ebd5e296",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_config_topology.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ab3bac6fc279ce7aabff3e3ee968d60c6be97dacd5928d975e6337cd065fb9c1",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_ssl.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ab70072146c373905714676ac1511ca63c8fedd530afaafa46e302c8068761a4",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_service_icap.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "177d530cec849ef6088274d2d7f81b883ac470caf09f59f64dd53dabbed8aa54",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_config_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b10844ba45454d2ef774e960259abccff2d3f2f56286743b44b8d977503debb8",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_service_tap.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac5cc6287e0a77fe8b6ba3aa83a5c4542c4e1c2ebeb39ce692102ec9e990d7eb",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_auth.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fec9de2f46e268cb4644ed0136066fb0cc99fd4063012afb93661a77ac68aa1c",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_service_chain.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88780ac3240ec98ce876c0317332d0172ff44ce1aa9051b30eee09461af474c7",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_service_layer3.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "204613b96badefe7231359dcee3a8f37b3300fdcdf6270336fdb154512830cad",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_service_swg.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a1995189aa251754c0b0c55339084d5b495451fa65e54762f480058f32c82efc",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_service_layer2.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88a36e93c7ab9cdeb70e0c4a9f2920788329576a38b7a7f545a02111a648575d",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/sslo_templates/sslo_service_http.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "646b6c5e3a9d29a975acb2b45b043764994c3558757b3af8186802b7ecc552cc",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/ipaddress.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed137ab728c4bf0db553fb1ae4a0c311dbd07a919c08e0e1d564d6ce932b625b",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/velos_client.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43e1f9bb24f4b835a6f4a731ce369bfe950c888d4a6e0abe51168400312aad6a",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/teem.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "708c33a7ad9c84e10fec7ab6b7dfbb0c9f4f7ac51cd099f52777f02615c95a3c",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/client.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca571fab767b848a7e3dffefee3813a8ac6849b24acff6812bebe7bab5c9e5e4",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4827396961acf5e3a453e731556f91269054d0552a7a851d30a5e1f57e0bd803",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "771feb3669ef2c9ec12478fe0fff3e59f95a71e4abbe9409ccf1a9951c79248c",
+   "format": 1
+  },
+  {
+   "name": "requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3029ab8466d500228e24b53e0f4209fcab60085f2f16823b5350d1d32de6ea5a",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6a76e69c3f9694747d927e381d2848f5a9bb76d6321facbc2641ce608d9057fa",
+   "format": 1
+  },
+  {
+   "name": "changelogs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/.plugin-cache.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f1d3c216ede7ccdde3a709182a978d65d90c781d697267f56d3f98b0c8fed6d",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/.gitkeep",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "changelogs/config.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b61082d50f47d9979c059f60991a16d5725f1990978d2b35c1d39cc2408a9efd",
+   "format": 1
+  },
+  {
+   "name": "changelogs/changelog.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c37651f840c8b002a7a4efdbbfd1ebb800fcec888c32410ec913cac4ad06a94e",
+   "format": 1
+  },
+  {
+   "name": "tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/test_bigiq.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2a7aa119d8018d5a4666780f8bcf2211ce3fff8f0a2e2d5dc9180bda7e4bf9bf",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/fixtures",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/fixtures/local_auth_response_2.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4af4b31c5ae675f71f659522d2844cb16a224c0eda836ff9ebaf88b7226e3545",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/fixtures/refresh_response.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a33394df2e16811b84e660dfd4cc412d10192659e86ac8fad0afaecff5e1178",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/fixtures/velos_auth.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d887726dfa8166de3540c6fb1d6edd424f1ab31e29c0308f383d6ae159333e6",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/fixtures/local_auth_response.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "08e6befef037ed5d94065793b9a8f54d2a00ffc5bb23dd5d62a6933a377baa64",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/fixtures/test_binary_file.mock",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1b1b7d2cd0e4c83b0b1b8efe1fb19fed121ebfc171305c7a2ca7ac6e6099b45b",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/fixtures/tmos_auth_response.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "82afe74b8b876ad67a9e8f130a22795dce82f4069a94b68956f0736b406dbcdf",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/fixtures/login_with_non_local_provider.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "76f2134fb6f42c7a2b7d2a01d1fd6bf8c5f234963e908f5f484bc9ec95114a2a",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/fixtures/load_provider_list.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8611e16569e611c5c52b2b9fec31d52fb357bca1e6aaa4a33cbf1368ce27f388",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/test_velos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bd5add4a7f2e868ec878c2e0a7eb88fc7260f3cc90f97a033c10629290e3854",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/httpapi/test_bigip.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "65a388f8b6279a78aebd948390f6c40b6b6e58bf47d1c9e2484fce57fe3d3dff",
+   "format": 1
+  },
+  {
+   "name": "tests/plugins/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c721c22d162a92e24e44914441db245a2504e988507b4acb891d015ee3d257e",
+   "format": 1
+  },
+  {
+   "name": "tests/utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/utils/common.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "987b4d5a10db8c5ba3182308c8f65eaaf0577fd1805460717d5b1ac3b4b3bd8c",
+   "format": 1
+  },
+  {
+   "name": "tests/utils/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/mock",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/mock/procenv.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "429a8314ff29212b69426bfd0ddf73a618db4161b3088ebd77dafd3245140e8e",
+   "format": 1
+  },
+  {
+   "name": "tests/mock/vault_helper.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4535613601c419f7d20f0c21e638dabccf69b4a7fac99d5f6f9b81d1519dafd6",
+   "format": 1
+  },
+  {
+   "name": "tests/mock/loader.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b51ec0d45347a3568300e50f688998007e346f052bd2e961c2ac6d13f7cee4d",
+   "format": 1
+  },
+  {
+   "name": "tests/mock/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/mock/path.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f7526597db22056cbcecbe67a098e27013a27de092d2d4d48ac7ca105e8ef950",
+   "format": 1
+  },
+  {
+   "name": "tests/mock/yaml_helper.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fada9f3506c951e21c60c2a0e68d3cdf3cadd71c8858b2d14a55c4b778f10983",
+   "format": 1
+  },
+  {
+   "name": "tests/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/modules/conftest.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "059e213995beaaaa9eec4f29ef05f3d879308a5817952b1e822b8b7763b466ac",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigiq_regkey_license.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "93c4ce9713a8ae3ff730f6eddb3d7f47ba3561de95d1690c4bf90cdb51c97f68",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_partition_wait.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a68d2e9b8a29aa63586fa51692cb9449c4a4ebb2feecdbf3bd754d65ebd29ad",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_do_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3af62c9eedd2ca08daf4f4cd08fe4d32d1222f63069e1c8e6cb03ff8dfcf40d1",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_apm_policy_import.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4773903c799d8d29f80babeac01a218d24a9a12fbcc33e779cc1445dceb5b48f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_modify_defaults_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "77edb08ba9962da5caca17a12d1bc4bb1eef6473aba45ef02e9f495133eea575",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_icap_delete_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed0f74607969a1a9cef4c0d60223f27c1dc7568182413ab5a33626edf3929d69",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_http_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7ade914ee25616e577c054f35f4daf75dde8a322ce2f119fdc914db2b5059d47",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/new_fast_app.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "19fb4f6f5f1898d08bb6d54c9feb2d5d5aad112a80d3088cffd444920eef7dda",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_modify_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1b2a4a8834d50f3d642e8292dcb0bf180b99c1b4e3a72642e2c0ecd2acb4a6ba",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_rpm_update_succeed.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "31d3069792a59d0f5b1ec6229ad9921420945b45a1ec5efb895e857b7a9d164c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_tap_modify_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d6533b5aca36fa94dd6510d6b04978188a0f766fd2e7ee57dc2724c557cf95a9",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_create_fwd_proxy_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9b43da86f86aa3199cf1c2a1ed310ad62a2895c29b7c6fa2bbb78381fbdea75d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_modify_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee33128221300ec02a3652bbae6a4ac57fe28d4280ad1f506d2026578b78a1e5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/as3_invalid_declaration_task_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "08bbab090504bb83ee219f5d35353b6d2df4e56303e5ab3ceb738674e578657f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/as3_declaration_invalid.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f0fb46a3194d79c0d1f48b7fe1e3def761cfe11f423dd18eac167b13f7593d74",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_swg_modify_defaults_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "690764870f3390c6a9f39a47268879cdaeb4a2f9be0f2b3fed7674ea3412fe1d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_resolver_create_fwd_name_servers_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0b66056d187ed20c9ae686367f490b69d9b0cc4d51ad2b391cb4000a1ca28ecf",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_http_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f21068902a320413179af8b9e575422011cc87418a23ef0e2850ebf111b317e8",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_auth_delete_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a1cf2950fa46832ff3f5ee8a4b08599a89401dc90ed6bf159679add7ef18ce3b",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_auth_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e914fe528f8a6d33ecc9b773e318b3704734d0cc8eaa45ebaac7a351b4af198",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_icap_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81315930f5a0702c0c805fa0dfa61ce2c140480a84cdd6fb8a9731f0786971e5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_resolver_modify_fwd_name_servers_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7e62c9b8257f174694abd7a888448ac31d520d7761b14830cfb1ef84b61a8f4a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_http_delete_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "248c2eae44f8beaea4a53956a6349e1f67dd07219e6bc65855d14b9ae21c35ea",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_policy_modify_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74ef142d69c83a8cfc053a87fcc9e69a7734d21d3678ab2b43eba0355891c28c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_imish_output_1.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0997e05cdee281904f35081ba852b145ed541fb7b1ed267f5fec2ca6c0205856",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_volume_install_complete.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f718750f2cef4685132ca7fab32643f26493ff1a691af68f4bdb1829d363769",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_ssl_delete_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6c81179cae5fdc617f7f86baadaf1b56d2393d753ade3b643c9495a3c7f7419",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_http_modify_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d38e2a9b24b47bcb1b2f6b6974e7dfc08a12efc586b17c6a11ae567d88422408",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_modify_fwd_proxy_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9821d9b43a36f701cf191a95deb0f4b6f974c052e5e9ef99e51ce39fa1084ae3",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_modify_fwd_proxy_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c44ecf43b520110dddcc68820111dd852ae64c0e4f525e79a5ce99bbd7cc7db",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_resolver_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63f23942ebf5732cadbb87c0ca51c285add7cbe37c034944ab12fc2e1acfaa9a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_swg_delete_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cc0de049d3fbec670e31f0cf0d28953cbf89a70c8cb9e1f3346b9d7e08728ef5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/MyApp-0.1.0-0001.noarch.rpm",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f3ba77f73dba20785c87c56b7020abe3ccb0ea9c5b271e06dc9b74d8f9adcb6",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_sc_modify_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "53a8c6974c51495a1bf3f54898a9dae202b05e497b7d26231a3b28473d3c3cf5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_ssl_modify_rev_proxy_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e1dde6f1fcddba123bd2f1d7280e12e9de0fed2daab5493a71a3c11258c8e64",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_sc_delete_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ea4ea13892cdedf00dc893f08ae2652654b9265c5665972f1f54ef6dade922f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_icap_delete_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "931f650a8c273ebd2e68dd3a8dc5afef7bf64c86fb141bb65bee34baeb3b0a6f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_modify_rev_proxy_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "289d3062c8b7ccd9f1ed342fb43ab819d8270dfa35513e0a8f3fb0e4092b66df",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_auth_modify_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e48910d975c0e194e777ca4a7e7f9d8afbcf9956b480922955aad01ebf08533c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_topo_l3_in_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "413b1d7841a2e6aadce6765f673c541b4f20affd2f8a18a553507bb251ee3672",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_modify_defaults_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b3933e47ff0128bdf370f10d6dc08757bf5918bc1de9b6941e7f029659799f76",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_create_rev_proxy_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ede07b11e593356d1f6a17a211c9b78382b13f9e52106867018f6d1be77fe92",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_http_modify_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "454eb76dc7a397972b61418c1555cbf61d594ec8f1750be903073400f91e2243",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_topo_expl.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ff3c75d2a236c57bb755c1902e8be7c01d176dbf1fe98dc8dbe03a4b16792d3b",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_resolver_modify_fwd_zones_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "34152769330a9b26ddd24b062e9523ff726b51266d256e657bfbb71b18dbeb0b",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/as3_multiple_tenants_invalid.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2a741806b71057d7665e83febe3b5fe53a716a91d8dabda02f8540cadbbc9749",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_auth_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f25b48d1d45abca730971cd57491e5f8d2ff545c3368174bbb7f655e7f39b61",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_machine_resolver.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aa88ff83a45d788d83b903f641c4c475e91072508b899cb72af73c9880919bb4",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_sc_modify_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "18979bcbf67055ed4a3090531e2022d4ed8dfbd3eeee9b10b5d76d436dfc415c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sys_crypto_csr.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "70ed49eb1f38e1ec5cd25451e6e4b9d75208b58f0e8339c0bddd57b2860a6215",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_l3_out_topo_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0afd15e875f86082c1165b8a0e5d672de9b548234ab1eb1300205eb9e1a2bc91",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_l2_delete_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79896b1ba5859b41584473be08feb761a7e8d215d3d61759392cf213605b8a9f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_tap_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f67872f0bc18341307517b589c2c88bb3c099067968291885a901aa3a26d994",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_topology.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ff3c75d2a236c57bb755c1902e8be7c01d176dbf1fe98dc8dbe03a4b16792d3b",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_partition_info.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "19b7004b06479a2750fe52870d1cfb122549da5854b770f4cb5d6962fdbe43b1",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_sc_delete_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ac2f76fa93dd3c932ac4be8bd540f8785cf38984d0af423c2fb1a3991afeb0d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_ssl_rev_proxy.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4fbe1b4baa08c21b9719283ac7a618ead2da23ffdff7b5552a1a1ac5064a8398",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_sc.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d6ffb38d2d0bcd01df0e2bcacff8a9ce300703aa7b494843c326d5da6cfe72d1",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_tap_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7bb3f8ad6d005bcbaa5373f3337d72eae32c051daa68dfa64ff7748964e3992d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_l2_modify_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "591a6bd49565b33389ed872d6fa40caf397d3f2dcfb20147c0685560aaad090a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_auth_modify_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "82fe487b98e6186d5c9b8d71d4425347edfb4aa19a9597a77cde17428654b269",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/create_insecure_cert1",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d89c43fafd34956a3b709b15aa23c41c9fd15f32d8056ca325f61ad8660ca071",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_policy_modify_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74ef142d69c83a8cfc053a87fcc9e69a7734d21d3678ab2b43eba0355891c28c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_service_layer2_modified.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e115317d3d039384490dd39134f6d8b9f9809dce5a57333a8b014b0db7ee8dee",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_ssl_fwd_proxy.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "347627a629c04ebe919043e8dc4fd3cf0087d4d543fb1f6ad0d82a7cf2485b2a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_modify_rev_proxy_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e0c50129be34cb6f031df46acd1f4176aaddc177ef3273b9ff2d3b0d3b20136",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/as3_error_message.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b7d5622b22c93a6e4ca31b983da16dd53cace64b3bbe0069374dd820ca2592c6",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_l2_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "07721f9d42a42b57fb7ca5ff71687925dc150daedf48351be58ea19c39b441ad",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/ts_declaration.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "58c09b8cb74fd6f8c29f4a328f826dcdde2fff7d8646a1c5f80172c1282fe4f7",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_tap_modify_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e4273ac5b8e0f2e28d2e63dcc77f11bed4cc5a52f78b54653165e8697e12b9a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_policy_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4cc325c6139b064dbcce721367fa94a8b0017fefa9062c5168d1b8da3b4eb57f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_sc_delete_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24cbe6834f449019211cda83f7e405b0448beac204fc97788849212c955b8110",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_sc_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9f1fae11c827ee632088b4a5f59190bd86d5a06b05e463c820d667382a24612b",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_auth_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3f7f60512d1689772d21ec1cc217b592c3edb1f199d63c41a02bd8d1f0a19e8b",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_volume_install_fail.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4da4d25ce62c61c6667f12a873161fb4264c4afd46d59a3b19266d4e7a1cb2bc",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_velos_partition_interface_config.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4b5d4f80ccadafb90185bc3c7bf7896ce38426092df6d6e0dd28045d626e2149",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_auth_modify_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f07254cb420649fbd09cc4cd5af473f91ab80e31312d21902de6a3f8bebe670",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_topo_expl_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "199c6e46b9a23feeab2029d136903e34ac766ac1a40bc15ae71158c1c1a8da4f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_policy_modify_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ccfac22ca924ba94a23646d50eb098c6840d0e29b07d88605b92a7fb5d50dd2d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_resolver_modify_fwd_servers_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4065f2cff43f231a809f084b209bee5592655e74d9c1aaeb2b3e28b10e486183",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/cert1",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "34728493e4a8d44ac685c279d3f79ac7a575e7a3cda784e12335b980130cac65",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_topo_l3_out_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "726d072a8b1e97776f111c007109d29bc6dd547d8ac5dbd0c146275324378e19",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_http_delete_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99d1c7dfda8c2a021b7f4c024776c8bb758f1f760ee03fb4b158891767b11fa6",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/partition_image_import_success.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "762ae5fdbf687a9ace8089cec1c99eff32b6a6310b70ffff73e3a95f597042cd",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_auth_delete_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d3855d1f794f3739fbe5e5382049c9bfc2c6628676258e786fbb976c8f84f833",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_swg_service_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "97f73761e752e75973e86258a85374510db2de9aeff392ecf603ceff173264af",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_icap_modify_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "38ea588fadafe5ad7ff6c67b26608b4c943c552d0744c07d386db2479f27849a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_resolver_fwd_server.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "265c0c35590e68c82ce83635bff31a6c00754367940ba972ab1c4f78a3d15f5d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_swg_modify_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "98e806c013d11e5b55befeeddd0a98b83530bf5583a316673ac4195f2e353d9e",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_volume_install_default.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ac0cbd01cf8c7499810c3a6dcd77d006e4c106a93c533e03b48998ef70c2001",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_tenant_info.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ba4a35ccf037143d8658a0aba9c5e7062413585f4ab3ee1b67e89574ed5fbe97",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_rpm_update_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2437ff74620ba745ffdb4e57eed2e4892e824475a0385d5f3b0901dfe396e8a2",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sys_software_image_1.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7817e86dcc39b7cdc078f4599c1bc97c0369e570138e1eb40ef425343f8eb5f4",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_policy_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bb51b89636e3748dd5779ee25d0a3bdd27378edf18ea29c4fd2cf890f63b35dc",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_icap_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b3ee9fedcd81a5edb72fa9460ac653de5676f2e8c23b4841c095155b17f8ee5a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_auth_failed_operation_delete.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fb4e2269730021051aaf6800e43c7dd9ac9243aedae5caad0fcb0895148dfc66",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_auth_delete_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd4baf8bd516a106d1f797d5e390b6a8f588f63651f03bcdb810842cb0d945f8",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_partition_status_provisioned.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1b03d3c0255201ef5b1db5a94797a10ade65cdd36b899255ce27a47dc435b845",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_l2_modify_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a2a46d4c1278ff7d85e21b3f3412ad009308a6e887158d3771e16901e775c4fb",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_volume_install_75pct.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca49c9a328ffedf2747d298524ff99b70a0fdd13065f2f301d5d60759dd2f26e",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_velos_vlan_config.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "58fc8246cafbdf1234d4485c29ee1e3eb05fa0ee17a07d1975d6224f9dfc99ca",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_tenant_status_configured.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5098d2c10d09a56555e5744e9fc51b0f3e49dda17d37c520f7fa42860c5544b6",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_layer3_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "01200fba0a0e4f4983f808f2e9d1497edc7000648cd49c6f56a5f28ee1a6178d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_resolver_create_fwd_zones_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d1d3772bfa1ea0315f4ce0a0ddd0c523cf9e0f13b0c515a2a120f051d1a916eb",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/failover_declaration.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5983147fd77794b2fc4b85f6105e629bddd4d1e4574acf9924021a54bcbcddf",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_l2_delete_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9aeb48be3acb94a1166053e6d0acf428acc78f5da23a06f586b8cadd1feea48c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/fast_app_update.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4121496cd59e0c0677abfea85264059ede24ab50ed6d9f33df3a6ee5e1277ce8",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_velos_partition_interface_swichedvlan_config.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a22b8fa5f998886c9baa5aeccca60c57314b29fd226eac3ebfe7404b585246cc",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_policy_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c6c16219024dc9b277e7d71b22e165d5e542c76141d111abc4cd21464f75706",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_software_image.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "34dea94585c537b008041a12f39975d64b54f99ef0afe869d0a8d0555cabebae",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_policy_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0e638ccbd11ba7d3854dcdd36714cdd8784e79a11680683df2469499d26720fa",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_regkey_license_pool.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bafc16089834d04976447d4e029c68195050400676f5ef7ab1a4f078cc6ceae1",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_rpm_update_failed_error_provided.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee176b989925c45c9ce7e2d23b4e0e4988900638790dad9e1066bcc6697354f0",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_http_modify_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e4273ac5b8e0f2e28d2e63dcc77f11bed4cc5a52f78b54653165e8697e12b9a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_service_http.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4b3b66a644c87d6dfeff2d6727a3d0108610d96752efd24bc5df6ee0d794932c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_create_fwd_proxy_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cddccd8fd2e18b8635adab73c13fb0c5695cf512a977ad9b2573397807119c4b",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sys_file_ssl_cert_with_issuer_cert.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b5f28033e4f8b15e26126c6eea75a2e4438e7874d0a8a2eb82c37f06a1981a8e",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_tap_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "623655bbc2c601e47f47b552632dd89c06d9e41c9d5523dd861735fcc87bc810",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_topo_expl_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "06237e8decc698762e371938b24102a384e28801c2e2be1c6edeb98d441121df",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/do_declaration.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b3fdfe0ea4decfea86949e946b54b89329740cfb7efab8aadd1182edecdf73aa",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_icap_delete_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9dffff8bd12dd1b42cb99e7680180830750be74ee7b4de71b322ca9dd4efabbe",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_swg_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "156b605886a6d6293673b5b3968ab91996847d66c7be7e8a13953469ec2a93eb",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_l3_expl_topo_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f7a27811054a155288c911dee06a0ccd36dc41fe65b53efd4085f0c305bbeaae",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_layer3_modify_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74ef142d69c83a8cfc053a87fcc9e69a7734d21d3678ab2b43eba0355891c28c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_resolver_modify_fwd_zones_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35d93be9a6e4680404a6f40ce945627e8395a24ed287047922e89695f5bd65d6",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_slot_info.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c07678fafddab83f09b7e2d377b4bc7a533bc3dcc0d15821e3c71cf5ebb3b69",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_partition_status_configured.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca4adad142fdab1d0261695f81a18c2f8dbcd2a3742cd85adfb4e7978fb974c0",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_sc_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "705cd98713fcc9294637d28991e17ecb74388b64fe86c34aa0d00d5479eb5c8d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_gs_missing.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e1ba031e1576198559c3d39fe94dcc2aa436a549be23d483c0831091274a94e",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_icap_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e500dddb1ff26ddf5baa630dc9190119d6465978fb294a4850546b25f587ea83",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_service_layer2.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c93a773a978ae522b6e32823e17481233c7e7cb3ef415ddad13c9c537d0ce5d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/ts_deleted_response.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6442b1f05b350f36762d595beeadcbc9bbefdf15df29383bff3e69140b591d6f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_icap_modify_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "97759832623c28a82dc53e11870de8be67b1bc011d5822f1f951989e9d50baf3",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_ssl_create_rev_proxy_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f02840137b64ece49807417bbc91b651ac413396535564ee7a04a7e7f8ff5e8",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_topo_l2_in_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "05d0179ecb5ee29dda85f08d10cde30ec3baaf4aea692fc7d759e70d4dcd2758",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_tenant_state_configured.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "293f1b37b7fc55bfe203e60d81e40d0036ed61aa5e3b7a2d0f76a77396a89930",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/as3_multi_tenant_declare_task_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dd457e48dd70260a9f8fbede2b8be44bc81d72e0742f1d26ca21b776202dbd09",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_topo_l3_in_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ebe11b288cb882772ec1f7f47db140ef7ead554d5c79dcb7a51acf8b686ee5dd",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_l2_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a2a46d4c1278ff7d85e21b3f3412ad009308a6e887158d3771e16901e775c4fb",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/partition_image_import_progress.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2099ad4840f35b55b84f19298b490950b9ee3e8a52f0aa9fad09f63487a0de1d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_resolver_create_fwd_servers_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "92316ef369d529f017cacfb8e3fcfff1327090ba2163abdb46e9bb1e6e52bd00",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_resolver_modify_fwd_servers_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e390a90c6180b3c440f6a1f02e71ffff4719eb655887f98ee241999c2577228",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_tap_modify_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d38e2a9b24b47bcb1b2f6b6974e7dfc08a12efc586b17c6a11ae567d88422408",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_http_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "58367f292e63ba0c92ba54780d01f49067a5e2f4741063ea280d68262cd30be1",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_topology_delete_created.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "396ad95498f6cff0fb1bbc87cb0cee5c891854e21dbab188db5316d1ff8acf71",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_volumes.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1a0aba67dd5175c939412395e011268db54f4ea246aff5b9d2bf09c88a49d94b",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_auth_modify_failure_test_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e90d041cff95c4914d25bb5815594ba119ff02e4e89b166dc63c875d206c382",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_topo_l2_in.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7bf01fff823fd7d5bf6f3e18e68e10ca2ae09bb36c0e6cef1c75cf808a588d76",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_topo_l3_out.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4ea5acce0d2b63ac4489e31db1ae90db9276b0952d7eadb12f726a051f674672",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_layer3_modify_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74ef142d69c83a8cfc053a87fcc9e69a7734d21d3678ab2b43eba0355891c28c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f08e81f2588528ef1e9b16502a897c617f48b86b4f6d6b1fb9c197a5b9cb036e",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_layer3_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "44562957dea20a5960114947f941610eda40ebf1ad981cf1ca66c26352602dec",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_regkey_license_key.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2fd1e04f5c835cfdece6b0084304fcdebe23d51b0c1e5b27f9db06a7c0517dc",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/partition_image_import_progress_2.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e1a9981cdfd51434224039b7cba03d7f1485d0562961a83fa12cac7116150e5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_volume_install_active.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "32a2ad3c64e93cd9c4cab4584df33f0485832b3e9594a328098d38e04167a57c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_create_defaults_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2d34575063fd7d3416110216ad3c1c90b87250c63e67154f410e02f08e99ad1c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b0d002cfd6346a90ac939618e95d0ba1cdd87738ba388fad511854b6d2496123",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_service_tap.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "16586698e7e3303ab38ad928b6f67c3c5c4fb7444df4e8a0c19aa30008ef69b9",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_topo_l3_out_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e9669a148af6a546a65376dfbd05201bb4d7825e55ee89c15f0530f04d629b8d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_topo_l3_in.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "969f9e2350bc243cee41029958c2e2b3173fd12b4745084ba3f20b5597a033cc",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/password_change_error.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "382366ad4400edbef63361049050c94babfc86b48902760d973af0f4cce968f9",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/start_image_import.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6770a3aedc9d1bf785d3b67f26ef97550b062df52c98c5446645fe52ede8a0ee",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_config_policy.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3023c7206f3f60719f97756ccf89f5afac2aff05f5a0fceaaeee1ab587e7b883",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_tenant_state_provisioned.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fecfeb9f53339c8fbce3ed0cd076117a45248eb7be1b9cfd47846ebb3e3f3f27",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/as3_declare.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4747fcd355fb0cdc5d9c6ece64d713057bfacc7d9a0dff112a8dea4d5adbd322",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_icap_modify_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b345b147218eafd3024d77c9e4fadf537888e9fb979f06701e5869fc77d43b43",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_tenant_state_deployed.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "76f445e4f1f3a0ce85b7ad6b5c82b59038be2bcd815b2c1ef4fc13c8d1cdb140",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_service_icap.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "40a720d2c3127f7f41d8f6ddc3f1f07c461b72c5a710a2693b0cdc234a51b192",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_gs_present.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "17c96587d1c17535ea636967fb0a2b7ea82d7d5b154490e15b613fb401864d0e",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_service_swg_default.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd96875b9cd2c746a14397410301a5e923dd7e8946d3eebc6637de7b7ba49ec9",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_config_auth_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b19e4c361613c474b62c5d90d4baeaf943d195ae9a7ffb22b7158cb06e389c14",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/create_insecure_key1",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4ab457958d23b8f4acfd7e81151d0a4af06e10f6b058b58f4808b81b0773ce5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_topo_l2_in_create_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37e26400813c1f17f44d01e094eb937522b934779d877982a6eb4fdf2bbc4d38",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_sc_modify_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2768e658d0e0890ec37b09d58f245df7152307fc5d7ee342309ff43763bfb96f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_l2_create_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9e1aca46f0d3383eb4bf702671f8320f6b13fefbd5d9b7d6c77932ecbf32b4ce",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_resolver_modify_fwd_zones_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eedada1708d56f60f4231e16b7a1522cdbe2ae0d8c3900d81e9cf341a1b696ef",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_shared_system_setup_1.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d321bdef3cfa8e7f1e802b47a72ea3f257410f367f71897411150c66e0f7f4c0",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_delete_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d04e79713993fa658713a024bbf8c2d3382e18eed8647328e596d3a5593fec88",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_resolver_create_fwd_zones_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8ca4c5b20013065fffdb477114c094629a280c38827100b6d5061960ac3748ca",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_volume_install_media_missing.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "83a708ece4430dadf0733c64147d65d1fe46658800f4c8c4dc699638110d4fbf",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_create_defaults_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3299dcc0208a0fa79dde7588a243b65d8c5f0d47be0b5cb8d58809addbc8a2ee",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/start_partition_image_import.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5d4790ffc9c4aa1267fb7e21759d5c1d7e02690ac62e36e58a0b2bbdd7500b61",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_l2_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14e9f5be1b24a4843f22a69e59dd97d6a6d12b27d542e192680a6ba397d824ba",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/partition_image_import_fail.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c765cf8dc04dd224db0d332e749c3d2592dcdb30578d2c33bdb8feda1cf0d00",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_resolver_zones.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "adce1423d3ee3423080fc5ae389b1369210e969b76059ba7eb4052c4c1e7d4e9",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_ssl_modify_fwd_proxy_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c2b46d50545180597ee6fa1e65850b1b01de2ef21ca67bc8d0d5955733114e5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_delete_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d90ec5923eb0bb413184d0c64cc27276f149fdbdacb4bcdd4ccafd3d2dc97f4d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_layer3_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0e638ccbd11ba7d3854dcdd36714cdd8784e79a11680683df2469499d26720fa",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_create_rev_proxy_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2950bac96e395c4171ded09ae5688751fa50bb602227f90c0583ef88e6079861",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_l2_in_topo_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8f81b1fad02b9450601e1c64c4168eb9d31865f48c1ba3b503fca86a4109792a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_velos_partition_lag_config.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f9e4dbf24fc66352be8edc1baae4f3fb642e3da100c916b7a0ab8fac8ea89fcc",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_l2_modify_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "54e994b268c9b20cf25054d153016b6e58aaab57a8c802a5e2b088b042d7f0e8",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_swg_delete_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a137570338cbe98c0513dfec360175bc69ba9edd29f447a88b9e56a9eb9a8fcc",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_resolver_create_fwd_servers_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "34f8254c3e70b984d4c7634472d56e8bd4217467e17471540cb6e04dc0f55860",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_resolver_create_ver_5_0_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c4f0b6de2ff4474e377039db1ac547a4cacfd5281474a9c705a416a558f6abc1",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/partition_image_remove_fail.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d1ad03c477e58f99002f8105425c8b923c1a277afc357f2f3f8ac400a2f1ef76",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_l2_out_topo_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1a96e2be53f972719f5cf330d932660e6f74859272e82308f68c2be27e9a2b8a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_icap_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1b644e466571f4a16868acac19b072b619aa8d7c8944db9e8cb22a56b49d4839",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_service_layer3.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3023c7206f3f60719f97756ccf89f5afac2aff05f5a0fceaaeee1ab587e7b883",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_resolver_create_fwd_zones_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "706192083a31e924c5d2d9b33fd79fac0ae14d6a302d4cf05f2febf0c041ca20",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_l3_in_topo_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "16df4b1e59a0e0d130910ef27ede2fb888e4e46b6c50e42cb9a33d9086fb52d7",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_http_delete_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "366362f4e7d38e7a770f32979d61db9c61fdecc10c3172c2fc215d8296293d19",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_tap_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c1dbb53bb144b7ab2a79bc21342c25616d4a6f5bf66b8314e88739d97375c678",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_ssl_create_fwd_proxy_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7c295c96e5c9234fdc5b66b14b3f2c6213209f5586a7b4b71e36f0d0c94bcc64",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_auth_modify_failure_test_error.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a7a31d4de9f057a78e69b4e2515a433b6d016bb8861466292fb12e055b31e68",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_service_swg.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88fa4062a800fcc84652fbfc8f55d1a3d648c86a5cd4366f555cda481ca36c0d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_layer3_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f8780af551969325f47176ca33beb3ffa66d4ac8aa3f1b02a657b1b2c8f96fa2",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_service_http2.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "da5c4ddf958d6704f1d2f09d4fe5bd11b0630135af41a493895a6885d3d193a8",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_sc_create_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9aa02b8aef8a4f532b4dae41ece9f12eb28208b9a9c93624ba11ffeba9cfae38",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_config_ssl_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "be2b5848567c1693527e0e9bdb0613127e7668e955121c032b4780585338f4f8",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/ts_response.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e833c1a7f227c2e05fb0969623f2cbe6483eb1a1003803c62fa7560bfe75e2c0",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_ltm_virtual_address_collection_1.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c021977af0b105f9457967b3309e02cdfcc59bee75dddf45fe64bed764263fee",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_sslo_config_auth.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03e87cc3b751c17ca8cd2ea0c88a5c455fb94a8dc32f1a91488f4cd3b521f81a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_http_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "847583c581845e65fcf9e49be5685258b1efff663c63df20290ebf727ae87bfa",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_tenant_images.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0d3013a87ee6a906159841ad1c61f8187f7097712d4ba28332fa0bb321d3d305",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_layer3_modify_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ccfac22ca924ba94a23646d50eb098c6840d0e29b07d88605b92a7fb5d50dd2d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/as3_multi_tenant_error_message.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8af8cb5fa6d4899c9ed8650a34bc56c7fceb59d19e4f14e2e33a0ddeb2e471db",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_rpm_update_failed_error_not_provided.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a16c1755bb450265b1daeae1b49c4647a6a9960a6f26817289c889adaad9555d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_ssl_delete_start.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f4d56f3fb1fa241558fa95151fa1fd7d93c2a3f1d394a36feab9ba38111919f1",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/load_volume_install_27pct.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e6fabf84137e3ed46c482e10be9b4a16ce586b47cdcdfe39b0952c644007edab",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/reply_sslo_l2_delete_done.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "65924841ddc299c6625df4f4f3bb35cfac9e5693574da8ffce6553125ab37f19",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/return_sslo_service_chain_params.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a391abb7a44c420c1aeecc18496c0f6d91cd184188d35fa147cb2201dcc7d10f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/fixtures/sslo_swg_create_defaults_generated.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bb38d5ce422c95553bdc62627d29489991ce297aa5cfec8290b4d59ae3cb6d3",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_config_ssl.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ebf9619bca68e3fcc040b28014b90db5ed936248b8adb0238f8ce270731872f8",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_command.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fdd3f9bb5b49fee5dc36aedf306745182bf51e34ea882698d432e7dae8cf82e9",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_partition.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "20dd41216cca86f0df2fb3213c8c7b43271921d1b41b4cd9df6c465801ea46f4",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_ucs.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6c2f375a5fa1c17aa138daebf1e890f44b5c08d1ec9c4883c73771e591f59ac9",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_service_icap.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "07ff3b1ab7a12bf8af99e334c62237fd5ef32d605193e890920198410bb5438a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_qkview.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d042e2d69e5ce274b75de0ab776eb0ee1984320cb8ab7af26bfc6417c9de332a",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_software_install.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "49e08b42bb4e18e873e8a857828018ad217c6ca47e82c704f87e830f6fa9ee37",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigiq_utility_license_assignment.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f6e7e8400ed89caa6f9808654f350ff9dfc093b17e45246ce97c130c221b0f85",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_software_image.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a2c21e03b0888e1fcd749508c6aeaa174967670dfa1c468c141b151c851ddc6d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_ssl_csr.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b5706a950d1fee14f2513a0d3ed0e42c6d249b81a1dc714a2f83cc386660c5bb",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_vcmp_guest.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "61c8dbe4583c79ff61116a5ec748ea6833880e3f99e4fb0deb02b2d25c50f229",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_config_utility.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8a1556072eba45ebee6d9291d9526561f37b05657a9fc7a3a483357db6215fc",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_lx_package.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3bba1cd4bfdb56490a1af81262d5d0c9a11bdc4e099b93875cc89b8dd189aaf6",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigiq_regkey_license_assignment.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a9312d72756576e252198d686f0ef7b343a0a3ac7ab9e630070ea2bb327c128",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_service_tap.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "32b67ec77860d93d99e5ed63b8050f44f0f602abb8488ae892fb5772805f847f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_imish_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3cc79fba1021f8adb2028921b7e337ca51b85c694ad055345eac7da98897b69d",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_cfe_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "327e12ece1c281be2a4a74db100a8ad572125747d1954f13c28a308a8f8b14d4",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigiq_do_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "82a8e23b5f2eb726cd8f20d155e6d57496ba4e6f5e00e6ede84709239be885d6",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_partition_interface.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f22fccae13137cfe291240a559487161a8932c69638de3e21a890c0d21865b5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_config_service_chain.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a80f52891e1dbe3c3eee9a2a06661ff5b5ecf90504a09d3ff21ca3700a2e879b",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_apm_policy_fetch.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "60c88576cd0adcc44c9eaab97d1aa8152133b75645b4a6bb5ef6fe2fb28595f2",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_service_http.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae57cabe930e5601bf21e6094fb9ea874ff62daa11dfc0c09140ce2c557588e4",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_partition_change_password.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f2c067be489cbc7c9103e9ab7a237f58d453052bb12f8e4781248b603651856",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_partition_image.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "211f98158b899f3b3b451a78eb33f50f260012064fe070c5f83850d258bf730c",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_asm_policy_fetch.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "11f5005d8a4c5855866ec31ea8e774891083d489f4483f2eedc3bcc0f49e3137",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigiq_utility_license.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "419d2253c89632ab70378550dcc654aead25c9db1939e96f654e52627d3a1e6f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35093410e61b2c99d9ed7e5daab119a4587fc3a8671bb7fb45f4d3a7315fdc47",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_fast_application.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0da2fe3529ff150b586b2c9d0e5a0f7bf7a4bb8d019f3ecdab8d8cd01e469b54",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_service_layer3.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d78e56beb9ed7c0ea06d9f728a119c8f5632ca2c9f9e2af5124ea3c3d28d7741",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigiq_device_discovery.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "26ebc3f48cda0a189e9c1559675fd386fea5a0bb0bd735bf5482cac8ef48c510",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_configsync_action.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5eac2edff9948a4c0507a9b773b4837a229c50090abe1c86601b029ef8c425e",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_ssl_key_cert.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ff80239def7b6a11fabd4e13aae268247eca0218cd6e261651436abbdb87264",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_tenant_image.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a84deccafe30bf63c1471229bd19ce34e6316a8f7c3bbaee6aa7292b8df38989",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_config_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9b738ecf0ab9796dc44ff206d64138ddecf06683f90efe445adff0da4576f0ec",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_tenant.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3329242172669e7919ecbc2d6f092ff8893b8d8d4df8aaea35331a44250963a1",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigiq_regkey_pool.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "66754363576580efdbd9c6282d719e11de20be7e9364fe15f47b55f0f1c412f5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_device_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57193fed838c08b2946f3e0599e0285ff9eaaf76c1a4d2ae680aca6ac1237171",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_fast_template.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8fa4914c2a0ef03c6d680e6a9be4db30721e069a28e05952e00351289bd9ca52",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_config_topology.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fae94da7e4d179eb9b6abc5198fca7656dbed03e79d286d20816055f2000b16f",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_ucs_fetch.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4803821b7d194e551dfab9b52c503a38ec05c20309476737efea9f66a85dccdf",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_asm_policy_import.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eed21afb4dc47a07aadb28911997086faabb245de617348ffe53b480629419ed",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_service_swg.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b14ec09e8052b4447cf9b0b936bfba9422cb7af957dbd312b4781eb113062cf4",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_ssl_pkcs12.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "336ac26f90225f1c9c246735c376a74209cb0824c521dcd5911f6e90f468d331",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigiq_as3_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c67ad66bb95df991cdd85cccbd83346e146f60886a29ff24d6a5b631efc388d8",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_tenant_wait.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1655bd215359b8a17cd03d5868829d5caebb5c8510f10c2e0833953fb0fdbad7",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_ts_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8433fa34c3d304e5f595bfdc39f528d631ecad9fe4834fc1c4f05ddbb00158f3",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigiq_device_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ed5b1d2f298bb1ba8bd4d767e4ffb7aec3d69e589d28437aa2303ee5d1e24dd",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_as3_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28145edf18885d4dd083b9f884af8f4600d4ad5c535ebfddc17316fc224523cd",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_config_resolver.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cb111d7ef199c7f06f099a726ca20992641210a3d51b7896dc1fd581ff31bf42",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_config_authentication.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "91226b7024438f7c071d981ee62470121caadaaf6e2e126f00dac06b8f130d91",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_partition_vlan.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2111a36689fab036af6d48645fbf6e62ac8585d160f9c94ba59b993367f3bdb7",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_velos_partition_lag.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bb50c240f6493d129fcd5f0d425a362c6b7894f65ba015fbf960d3fa42a7e523",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/network/f5/test_bigip_sslo_service_layer2.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fb6cb01aee154b9a6c0b9e7410f092a91b6f92925b78045085cd589a8b3386a5",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/utils.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24cb8d79ee7c7f60232def0b91968379b872915342fef2311ba886c532583b98",
+   "format": 1
+  },
+  {
+   "name": "tests/modules/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/compat",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/compat/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/compat/unittest.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5401a046e5ce71fa19b6d905abd0f9bdf816c0c635f7bdda6730b3ef06e67096",
+   "format": 1
+  },
+  {
+   "name": "tests/compat/builtins.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ca4cac919e166b25e601e11acb01f6957dddd574ff0a62569cb994a5ecb63e1",
+   "format": 1
+  },
+  {
+   "name": "tests/compat/mock.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0af958450cf6de3fbafe94b1111eae8ba5a8dbe1d785ffbb9df81f26e4946d99",
+   "format": 1
+  },
+  {
+   "name": "tests/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.13.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d76daca6082e3cdd51ef4d46102d7f33e2a651fe387c66b73c03d4cd8ef982c5",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.9.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d76daca6082e3cdd51ef4d46102d7f33e2a651fe387c66b73c03d4cd8ef982c5",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.10.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d76daca6082e3cdd51ef4d46102d7f33e2a651fe387c66b73c03d4cd8ef982c5",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.11.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d76daca6082e3cdd51ef4d46102d7f33e2a651fe387c66b73c03d4cd8ef982c5",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.12.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d76daca6082e3cdd51ef4d46102d7f33e2a651fe387c66b73c03d4cd8ef982c5",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5/fixtures",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5/fixtures/load_provisioned_modules.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f8cd6826ed39227ebc4fc86d0212df0785b66af48d310b9e82e4f2f8da64048",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5/fixtures/load_bigiq_version.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed4febf9ba30448981573d4ef568560b8f95d625c72db6c7247379bbc548d000",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5/fixtures/teem_error_response.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4738a99e84fb532ed5d2241b8982211b69cfbfe437027e6ac4d15e16f7e4534c",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5/fixtures/load_tmos_version.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74a9708371a1e5c2b5820ecf5e44c9a09aa0242936dbcc56ef5e086bd86429ae",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5/test_velos_client.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bcf2fa4bcc6e6775ec41b1c6c37185463fdd1147ddbc2495dcbaf14396ad8528",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5/test_client.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4283c4c5c52e0be113c9b6b5b89b8bc5a4218fdb3849986a8a817c495ae041d6",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/network/f5/test_teem.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "92c76d8740f1ebc5928aa2ede758b67b46a925931da6480c94b2b5177de2c93e",
+   "format": 1
+  },
+  {
+   "name": "tests/module_utils/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  }
+ ],
+ "format": 1
+}
