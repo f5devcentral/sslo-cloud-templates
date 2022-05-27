@@ -2,7 +2,7 @@
 #
 # The f5_modules collection is not installed by default in this lab environment.
 # Before using this playbook, install the collection:
-#   ansible-galaxy collection install f5networks.f5_modules -f
+#   ansible-galaxy collection install f5networks.f5_bigip -f
 #
 
 - name: Delete BIG-IP license

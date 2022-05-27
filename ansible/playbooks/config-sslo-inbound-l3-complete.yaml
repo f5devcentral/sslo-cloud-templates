@@ -2,7 +2,7 @@
 #
 # The f5_modules and f5_bigip collections are required by this playbook.
 # If not already installed:
-#   ansible-galaxy collection install f5networks.f5_modules f5networks.f5_bigip -f
+#   ansible-galaxy collection install f5networks.f5_bigip -f
 #
 
 - name: Create SSLO Topology Configuration
@@ -24,33 +24,22 @@
 
     snort1_host: "{{snort1_host}}"
     snort2_host: "{{snort2_host}}"
-    webapp_pool: "{{webapp_pool}}"
     topology_name: "l3inboundapp"
 
-    provider:
-      server: "{{ ansible_host }}"
-      user: "{{ ansible_user }}"
-      password: "{{ ansible_httpapi_password }}"
-      server_port: "{{ ansible_httpapi_port }}"
-      validate_certs: no
-
   tasks:
-    ## webapp pool
-    - name: Create webapp pool
-      bigip_pool:
-        provider: "{{ provider }}"
-        name: webapp
-        monitors:
-        - https
-      delegate_to: localhost
+    ## import cert/key
+    - name: Import server cert/key
+      bigip_ssl_key_cert:
+        key_content: "{{ lookup('file', 'certs/wildcardrsa.f5labs.com.pemk') }}"
+        key_name: wildcard.f5labs.com
+        cert_content: "{{ lookup('file', 'certs/wildcardrsa.f5labs.com.crt') }}"
+        cert_name: wildcard.f5labs.com
 
-    - name: Add member to webapp pool
-      bigip_pool_member:
-        provider: "{{ provider }}"
-        pool: webapp
-        host: "{{ webapp_pool }}"
-        port: 443
-      delegate_to: localhost
+    ## webapp pool
+    - name: Create webapp pool (via as3)
+      bigip_as3_deploy:
+        content: "{{ lookup('template', 'declarations/as3_pool_webapp.json') }}"
+      tags: [ deploy ]
 
     ## SSL Configuration
     - name: Create an SSLO SSL config with reverse proxy
@@ -58,8 +47,8 @@
         name: "sslconfig"
         client_settings:
           proxy_type: "reverse"
-          cert: "/Common/default.crt"
-          key: "/Common/default.key"
+          cert: "/Common/wildcard.f5labs.com.crt"
+          key: "/Common/wildcard.f5labs.com.key"
 
     ## Inline L3 service 1
     - name: SSLO LAYER 3 (SNORT1)
@@ -120,7 +109,7 @@
         default_rule:
           allow_block: "allow"
           tls_intercept: "intercept"
-          service_chain: "service_chain_1"
+          service_chain: "service_chain_2"
         policy_rules:
         - name: "internal_traffic"
           policy_action: "allow"
@@ -130,14 +119,6 @@
           - condition_type: "client_ip_subnet_match"
             condition_option_subnet:
             - "10.0.0.0/8"
-        - name: "all_ssl_traffic"
-          policy_action: "allow"
-          ssl_action: "intercept"
-          service_chain: "service_chain_2"
-          conditions:
-          - condition_type: "server_port_match"
-            condition_option_ports:
-            - "443"
 
     ## Topology
     - name: Create SSLO Topology
@@ -147,8 +128,8 @@
         dest: "10.0.2.200/32"
         port: 443
         ssl_settings: "sslconfig"
-        security_policy: "ssloP_sslopolicy"
+        security_policy: "sslopolicy"
         vlans:
         - "/Common/external"
         snat: "automap"
-        pool: "/Common/webapp"
+        pool: "/Common/Shared/webapp"

@@ -1,0 +1,83 @@
+{
+    "class": "AS3",
+    "action": "deploy",
+    "persist": true,
+    "declaration": {
+        "class": "ADC",
+        "schemaVersion": "3.35.0",
+        "Common": {
+            "class": "Tenant",
+            "Shared": {
+                "class": "Application",
+                "template": "shared",
+                "webapp": {
+                    "class": "Pool",
+                    "members": [
+                        {
+                            "servicePort": 443,
+                            "shareNodes": true,
+                            "serverAddresses": ["{{ webapp_pool }}"]
+                        }
+                    ],                    
+                    "minimumMonitors": 1,
+                    "monitors": [
+                        {
+                            "bigip": "/Common/https"
+                        }
+                    ]
+                },
+                "wildcard.f5labs.com": {
+                    "class": "Certificate",
+                    "certificate": {
+                        "bigip": "/Common/wildcard.f5labs.com.crt"
+                    },
+                    "privateKey": {
+                        "bigip": "/Common/wildcard.f5labs.com.key"
+                    }
+                },
+                "webapp_clientssl": {
+                    "class": "TLS_Server",
+                    "insertEmptyFragmentsEnabled": true,
+                    "certificates": [
+                        {
+                            "certificate": "/Common/Shared/wildcard.f5labs.com"
+                        }
+                    ]
+                },
+                "webapp_vip": {
+                    "class": "Service_HTTPS",
+                    "layer4": "tcp",
+                    "profileTCP": {
+                        "bigip": "/Common/tcp"
+                    },
+                    "virtualAddresses": [
+                        "{{ sslo_vip }}"
+                    ],
+                    "profileHTTP": {
+                        "bigip": "/Common/http"
+                    },
+                    "redirect80": false,
+                    "clientTLS": {
+                        "bigip": "/Common/serverssl"
+                    },
+                    "serverTLS": "/Common/Shared/webapp_clientssl",
+                    "translateServerAddress": true,
+                    "translateServerPort": true,
+                    "snat": "auto",
+                    "allowVlans": [
+                        {
+                            "bigip": "/Common/external"
+                        }
+                    ],
+                    "profileAccess": {
+                        "bigip": "/Common/ssloDefault_accessProfile"
+                    },
+                    "policyPerRequestAccess": {
+                        "bigip": "/Common/ssloP_sslopolicy.app/ssloP_sslopolicy_per_req_policy"
+                    },
+                    "pool": "webapp"
+                }
+            }
+        }
+    }
+}

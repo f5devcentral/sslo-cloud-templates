@@ -31,11 +31,11 @@ This template was developed and tested with the following versions:
 
 #### Usage
 
-The accompanying Terraform files generate an Ansible variables file (ansible_vars.yaml) that can be used with this playbook. Before using SSL Orchestrator Ansible playbooks, you must install the F5 Module v2 Ansible collection into your Ansible development folder:
+The accompanying Terraform files generate an Ansible variables file (ansible_vars.yaml) that can be used with this playbook. Before using SSL Orchestrator Ansible playbooks, you must install the F5 Module v1 and v2 Ansible collections (imperative and declarative) into your Ansible development folder:
 
   ```
   cd ansible
-  ansible-galaxy collection install f5networks.f5_bigip -f
+  ansible-galaxy collection install f5networks.f5_modules f5networks.f5_bigip -f
   ```
 
 You can now use one of the following options to deploy the example SSL Orchestrator playbooks
