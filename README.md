@@ -125,8 +125,9 @@ tcpdump -lnni dmz1 -Xs0 not icmp
 ---------------
 
 ##### Attributions
-This project would not exist without the contributions of the following individuals:
+This project exists through the tremendous efforts of the following individuals:
 - Jason Chiu
+- Kevin Stewart
 - Melisa Wentz
 - Arnulfo Hernandez
 - Barrymore Simon

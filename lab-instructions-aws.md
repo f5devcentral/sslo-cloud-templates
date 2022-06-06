@@ -63,10 +63,9 @@ cd <repo>
 ### Bootstrap the SSLO AWS environment with Terraform
 
 - From a web browser client - subscribe to the following EC2 instances:
-
-  - https://aws.amazon.com/marketplace/pp?sku=5n807t93duw392y7t8v7nb1zv
-  - https://aws.amazon.com/marketplace/pp?sku=758gbcgh7wafwchsq40cmj18j
-  - https://aws.amazon.com/marketplace/pp?sku=9jk8duinsir94459457myhn4q
+  - https://aws.amazon.com/marketplace/pp?sku=5e92658b-3fa7-42c1-9a9b-569f009582df
+  - https://aws.amazon.com/marketplace/pp?sku=78b1d030-4c7d-4ade-b8e6-f8dc86941303
+  - https://aws.amazon.com/marketplace/pp?sku=a133064f-76e1-4d8a-aa3d-26ef12e6b95a
 
 - Obtain your programmatic access credentials for your AWS account: Access Key ID, Access Key, and Session Token.
 

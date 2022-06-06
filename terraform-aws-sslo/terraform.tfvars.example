@@ -58,7 +58,8 @@ webapp_ami     = "ami-05343502b4149e010" ### us-east-1 ### WordPress with NGINX 
 #
 
 #  BIG-IP 15.1.5.1 / SSLO 7.5.2 / us-east-1 
-sslo_ami      = "ami-08825101a0ab709f0"  ### Use F5 BIG-IP VE - ALL (BYOL, 2 Boot Locations)
+# sslo_ami      = "ami-08825101a0ab709f0"  ### Use F5 BIG-IP VE - ALL (BYOL, 2 Boot Locations)
+sslo_ami      = "ami-0b44eb668f50b0cbb"  ### Use F5 BIGIP-15.1.5.1-0.0.14 encrypted-threat-protection-220328014337
 sslo_pkg_name = "f5-iappslx-ssl-orchestrator-15.1.0-7.5.2.noarch.rpm" 
 
 
