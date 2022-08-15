@@ -45,7 +45,7 @@ instance_type = "m5.4xlarge"
 
 # AMI IDs (Region-specific)
 inspection_ami = "ami-0cdc9ccb73322825f" ### us-east-1 ### Snort pre-configured by Miri Infotech Inc. on Ubuntu
-webapp_ami     = "ami-05343502b4149e010" ### us-east-1 ### WordPress with NGINX and SSL Certified by Bitnami and Automattic
+webapp_ami     = "ami-0b75ec5805dd0a75f" ### us-east-1 ### WordPress with NGINX and SSL Certified by Bitnami and Automattic
 # sslo_ami      = "ami-xxxxxxxxxxxxxxxxx"  ### Use F5 BIG-IP VE - ALL (BYOL, 2 Boot Locations)
 # sslo_pkg_name = "f5-iappslx-ssl-orchestrator-x.x.x-x.x.x.noarch.rpm"  ### Corresponding package that is included in the above AMI
 
